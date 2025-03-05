@@ -1,0 +1,742 @@
+Mechanical_Report_Files/Logo.png 
+
+Project*
+First Saved Monday, November 22, 2021 
+Last Saved Monday, February 24, 2025 
+Product Version 2025 R1 
+Save Project Before Solution No 
+Save Project After Solution No 
+
+Mechanical_Report_Files/Figure0001.png
+
+Contents
+Units
+Model
+Geometry Imports
+Geometry Import
+Geometry
+SYS
+Parts
+Materials
+Coordinate Systems
+Symmetry
+Symmetry Region
+Connections
+Mesh
+Mesh Controls
+Static Structural
+Analysis Settings
+Loads
+Solution
+Solution Information
+Results
+Stress Tool
+Safety Factor
+Material Data
+Copper Alloy
+Concrete
+Units
+TABLE 1
+
+Unit System Metric (m, kg, N, s, V, A) Degrees rad/s Celsius 
+Angle Degrees 
+Rotational Velocity rad/s 
+Temperature Celsius 
+
+Model
+TABLE 2
+Model > Geometry Imports
+
+Object Name Geometry Imports 
+State Solved 
+
+TABLE 3
+Model > Geometry Imports > Geometry Import
+
+Object Name Geometry Import 
+State Solved 
+Definition 
+Source ''''\dp0\SYS-1\DM\SYS-1.scdoc 
+Type SpaceClaim 
+Basic Geometry Options 
+Parameters Independent 
+Parameter Key  
+Advanced Geometry Options 
+Compare Parts On Update No 
+Analysis Type 3-D 
+
+Geometry
+TABLE 4
+Model > Geometry
+
+Object Name Geometry 
+State Fully Defined 
+Definition 
+Source ''''\dp0\SYS-1\DM\SYS-1.scdoc 
+Type SpaceClaim 
+Length Unit Meters 
+Element Control Program Controlled 
+Display Style Material 
+Bounding Box 
+Length X 0.2 m 
+Length Y 5.5e-002 m 
+Length Z 2.75e-002 m 
+Properties 
+Volume 7.854e-005 m³ 
+Mass 0.40827 kg 
+Scale Factor Value 1. 
+Statistics 
+Bodies 2 
+Active Bodies 2 
+Nodes 26725 
+Elements 5760 
+Mesh Metric None 
+Update Options 
+Assign Default Material No 
+Basic Geometry Options 
+Solid Bodies Yes 
+Surface Bodies Yes 
+Line Bodies Yes 
+Parameters Independent 
+Parameter Key  
+Attributes Yes 
+Attribute Key  
+Named Selections Yes 
+Named Selection Key  
+Material Properties Yes 
+Advanced Geometry Options 
+Use Associativity Yes 
+Coordinate Systems Yes 
+Coordinate System Key  
+Reader Mode Saves Updated File No 
+Use Instances Yes 
+Smart CAD Update Yes 
+Compare Parts On Update No 
+Analysis Type 3-D 
+Mixed Import Resolution None 
+Import Facet Quality Source 
+Clean Bodies On Import No 
+Stitch Surfaces On Import None 
+Decompose Disjoint Geometry Yes 
+Enclosure and Symmetry Processing Yes 
+
+TABLE 5
+Model > Geometry > Body Groups
+
+Object Name SYS 
+State Meshed 
+Graphics Properties 
+Visible Yes 
+Definition 
+Suppressed No 
+Assignment Multiple Materials 
+Coordinate System Default Coordinate System 
+Bounding Box 
+Length X 0.2 m 
+Length Y 5.5e-002 m 
+Length Z 2.75e-002 m 
+Properties 
+Volume 7.854e-005 m³ 
+Mass 0.40827 kg 
+Centroid X 0.1 m 
+Centroid Y -8.7914e-019 m 
+Centroid Z -1.5497e-002 m 
+Moment of Inertia Ip1 1.4432e-004 kg·m² 
+Moment of Inertia Ip2 1.3819e-003 kg·m² 
+Moment of Inertia Ip3 1.4798e-003 kg·m² 
+Statistics 
+Nodes 26725 
+Elements 5760 
+Mesh Metric None 
+CAD Attributes 
+PartTolerance: 0.00000001 
+Color:143.175.143  
+
+TABLE 6
+Model > Geometry > SYS > Parts
+
+Object Name Solid Solid 
+State Meshed 
+Graphics Properties 
+Visible Yes 
+Transparency 1 
+Definition 
+Suppressed No 
+Stiffness Behavior Flexible 
+Coordinate System Default Coordinate System 
+Reference Temperature By Environment 
+Treatment None 
+Material 
+Assignment Copper Alloy Concrete 
+Nonlinear Effects Yes 
+Thermal Strain Effects Yes 
+Bounding Box 
+Length X 0.2 m 
+Length Y 5.e-002 m 5.5e-002 m 
+Length Z 2.5e-002 m 2.75e-002 m 
+Properties 
+Volume 3.7306e-005 m³ 4.1233e-005 m³ 
+Mass 0.30964 kg 9.863e-002 kg 
+Centroid X 0.1 m 
+Centroid Y -1.4066e-018 m 7.7684e-019 m 
+Centroid Z -1.5113e-002 m -1.6703e-002 m 
+Moment of Inertia Ip1 1.0377e-004 kg·m² 4.0369e-005 kg·m² 
+Moment of Inertia Ip2 1.047e-003 kg·m² 3.3473e-004 kg·m² 
+Moment of Inertia Ip3 1.1176e-003 kg·m² 3.622e-004 kg·m² 
+Statistics 
+Nodes 14501 
+Elements 2880 
+Mesh Metric None 
+
+TABLE 7
+Model > Materials
+
+Object Name Materials 
+State Fully Defined 
+Statistics 
+Materials 4 
+Material Assignments 0 
+
+Coordinate Systems
+TABLE 8
+Model > Coordinate Systems > Coordinate System
+
+Object Name Global Coordinate System 
+State Fully Defined 
+Definition 
+Type Cartesian 
+Coordinate System ID 0.  
+Origin 
+Origin X 0. m 
+Origin Y 0. m 
+Origin Z 0. m 
+Directional Vectors 
+X Axis Data [ 1. 0. 0. ] 
+Y Axis Data [ 0. 1. 0. ] 
+Z Axis Data [ 0. 0. 1. ] 
+Transfer Properties 
+Source  
+Read Only No 
+
+Symmetry
+TABLE 9
+Model > Symmetry
+
+Object Name Symmetry 
+State Fully Defined 
+
+TABLE 10
+Model > Symmetry > Symmetry Region
+
+Object Name Symmetry Region Symmetry Region 2 
+State Fully Defined 
+Scope 
+Scoping Method Geometry Selection 
+Geometry 4 Faces 2 Faces 
+Definition 
+Scope Mode Manual 
+Type Symmetric 
+Coordinate System Global Coordinate System 
+Symmetry Normal Z Axis X Axis 
+Suppressed No 
+
+Connections
+TABLE 11
+Model > Connections
+
+Object Name Connections 
+State Fully Defined 
+Auto Detection 
+Generate Automatic Connection On Refresh Yes 
+Transparency 
+Enabled Yes 
+Statistics 
+Contacts 0 
+Active Contacts 0 
+Joints 0 
+Active Joints 0 
+Beams 0 
+Active Beams 0 
+Bearings 0 
+Active Bearings 0 
+Springs 0 
+Active Springs 0 
+Body Interactions 0 
+Active Body Interactions 0 
+
+Mesh
+TABLE 12
+Model > Mesh
+
+Object Name Mesh 
+State Solved 
+Display 
+Display Style Use Geometry Setting 
+Defaults 
+Physics Preference Mechanical 
+Element Order Program Controlled 
+Element Size Default 
+Sizing 
+Use Adaptive Sizing Yes 
+Resolution Default (2) 
+Mesh Defeaturing Yes 
+Defeature Size Default 
+Transition Fast 
+Span Angle Center Coarse 
+Initial Size Seed Assembly 
+Bounding Box Diagonal 0.20924 m 
+Average Surface Area 5.4646e-003 m² 
+Minimum Edge Length 2.5e-003 m 
+Quality 
+Check Mesh Quality Yes, Errors 
+Error Limits Aggressive Mechanical 
+Target Element Quality Default (5.e-002) 
+Smoothing Medium 
+Mesh Metric None 
+Inflation 
+Use Automatic Inflation None 
+Inflation Option Smooth Transition 
+Transition Ratio 0.272 
+Maximum Layers 5 
+Growth Rate 1.2 
+Inflation Algorithm Pre 
+Inflation Element Type Wedges 
+View Advanced Options No 
+Advanced 
+Number of CPUs for Parallel Part Meshing Program Controlled 
+Straight Sided Elements No 
+Rigid Body Behavior Dimensionally Reduced 
+Triangle Surface Mesher Program Controlled 
+Topology Checking Yes 
+Pinch Tolerance Please Define 
+Generate Pinch on Refresh No 
+Automatic Methods 
+Sheet Body Method Quad Dominant 
+Sweepable Body Method Sweep 
+Statistics 
+Nodes 26725 
+Elements 5760 
+Show Detailed Statistics No 
+
+TABLE 13
+Model > Mesh > Mesh Controls
+
+Object Name Body Sizing MultiZone 
+State Fully Defined 
+Scope 
+Scoping Method Geometry Selection 
+Geometry 2 Bodies 
+Definition 
+Suppressed No 
+Type Element Size   
+Element Size 5.e-003 m   
+Method   MultiZone 
+Decomposition Type   Program Controlled 
+Mapped/Swept Type   Hexa 
+Surface Mesh Method   Program Controlled 
+Free Mesh Type   Not Allowed 
+Element Order   Use Global Setting 
+Src/Trg Selection   Manual Source(s) and Target(s) 
+Src/Trg Scoping Method   Geometry Selection 
+Source(s) and Target(s)   2 Faces 
+Sweep Size Behavior   Sweep Element Size 
+Sweep Element Size   8.e-004 m 
+Element Option   Solid 
+Advanced 
+Defeature Size Default   
+Behavior Soft   
+Preserve Boundaries   Protected 
+Mesh Based Defeaturing   Off 
+Minimum Edge Length   2.5e-003 m 
+Write ICEM CFD Files   No 
+Use Split Angle   No 
+
+Static Structural
+TABLE 14
+Model > Analysis
+
+Object Name Static Structural 
+State Solved 
+Definition 
+Physics Type Structural 
+Analysis Type Static Structural 
+Solver Target Mechanical APDL 
+Options 
+Environment Temperature 22. °C 
+Generate Input Only No 
+
+TABLE 15
+Model > Static Structural > Analysis Settings
+
+Object Name Analysis Settings 
+State Fully Defined 
+Step Controls 
+Number Of Steps 1. 
+Current Step Number 1. 
+Step End Time 1. s 
+Auto Time Stepping Program Controlled 
+Solver Controls 
+Solver Type Program Controlled 
+Weak Springs Off 
+Solver Pivot Checking Program Controlled 
+Large Deflection Off 
+Inertia Relief Off 
+Quasi-Static Solution Off 
+Rotordynamics Controls 
+Coriolis Effect Off 
+Restart Controls 
+Generate Restart Points Program Controlled 
+Retain Files After Full Solve No 
+Combine Restart Files Program Controlled 
+Nonlinear Controls 
+Newton-Raphson Option Program Controlled 
+Force Convergence Program Controlled 
+Moment Convergence Program Controlled 
+Displacement Convergence Program Controlled 
+Rotation Convergence Program Controlled 
+Line Search Program Controlled 
+Stabilization Program Controlled 
+Advanced 
+Inverse Option No 
+Contact Split (DMP) Off 
+Output Controls 
+Output Selection None 
+Stress Yes 
+Back Stress No 
+Strain Yes 
+Contact Data Yes 
+Nonlinear Data No 
+Nodal Forces No 
+Volume and Energy Yes 
+Euler Angles Yes 
+General Miscellaneous No 
+Contact Miscellaneous No 
+Store Results At All Time Points 
+Result File Compression Program Controlled 
+Analysis Data Management 
+Solver Files Directory ''''\StaticStructural\ 
+Future Analysis None 
+Scratch Solver Files Directory  
+Save MAPDL db No 
+Contact Summary Program Controlled 
+Delete Unneeded Files Yes 
+Nonlinear Solution No 
+Solver Units Active System 
+Solver Unit System mks 
+
+TABLE 16
+Model > Static Structural > Loads
+
+Object Name Moment Displacement 
+State Fully Defined 
+Scope 
+Scoping Method Geometry Selection 
+Geometry 2 Faces 1 Vertex 
+Definition 
+Type Moment Displacement 
+Define By Components 
+Coordinate System Global Coordinate System 
+X Component 0. N·m (ramped) Free 
+Y Component 0. N·m (ramped) 0. m (ramped) 
+Z Component -1500. N·m (ramped) Free 
+Suppressed No 
+Behavior Deformable   
+Advanced 
+Pinball Region All   
+
+FIGURE 1
+Model > Static Structural > Moment
+
+Mechanical_Report_Files/Figure0002.png
+
+FIGURE 2
+Model > Static Structural > Displacement
+
+Mechanical_Report_Files/Figure0003.png
+
+Solution
+TABLE 17
+Model > Static Structural > Solution
+
+Object Name Solution 
+State Solved 
+Adaptive Mesh Refinement 
+Max Refinement Loops 1. 
+Refinement Depth 2. 
+Information 
+Status Done 
+MAPDL Elapsed Time 10. s 
+MAPDL Memory Used 363. MB 
+MAPDL Result File Size 6.75 MB 
+Post Processing 
+Beam Section Results No 
+On Demand Stress/Strain No 
+
+TABLE 18
+Model > Static Structural > Solution > Solution Information
+
+Object Name Solution Information 
+State Solved 
+Solution Information 
+Solution Output Solver Output 
+Newton-Raphson Residuals 0 
+Identify Element Violations 0 
+Update Interval 2.5 s 
+Display Points All 
+FE Connection Visibility 
+Activate Visibility Yes 
+Display All FE Connectors 
+Draw Connections Attached To All Nodes 
+Line Color Connection Type 
+Visible on Results No 
+Line Thickness Single 
+Display Type Lines 
+
+TABLE 19
+Model > Static Structural > Solution > Results
+
+Object Name Equivalent Stress Equivalent Stress 2 Total Deformation 
+State Solved 
+Scope 
+Scoping Method Geometry Selection 
+Geometry All Bodies 
+Definition 
+Type Equivalent (von-Mises) Stress Total Deformation 
+By Time 
+Display Time Last 
+Separate Data by Entity No 
+Calculate Time History Yes 
+Identifier  
+Suppressed No 
+Integration Point Results 
+Display Option Averaged   
+Average Across Bodies No   
+Results 
+Minimum 94522 Pa 0. m 
+Maximum 8.5776e+008 Pa 4.4168e-003 m 
+Average 2.136e+008 Pa 1.4396e-003 m 
+Minimum Occurs On Solid 
+Maximum Occurs On Solid 
+Information 
+Time 1. s 
+Load Step 1 
+Substep 1 
+Iteration Number 1 
+
+FIGURE 3
+Model > Static Structural > Solution > Equivalent Stress
+
+Mechanical_Report_Files/Figure0004.png
+
+TABLE 20
+Model > Static Structural > Solution > Equivalent Stress
+
+Time [s] Minimum [Pa] Maximum [Pa] Average [Pa] 
+1. 94522 8.5776e+008 2.136e+008 
+
+FIGURE 4
+Model > Static Structural > Solution > Equivalent Stress 2
+
+Mechanical_Report_Files/Figure0005.png
+
+TABLE 21
+Model > Static Structural > Solution > Equivalent Stress 2
+
+Time [s] Minimum [Pa] Maximum [Pa] Average [Pa] 
+1. 94522 8.5776e+008 2.136e+008 
+
+FIGURE 5
+Model > Static Structural > Solution > Total Deformation
+
+Mechanical_Report_Files/Figure0006.png
+
+TABLE 22
+Model > Static Structural > Solution > Total Deformation
+
+Time [s] Minimum [m] Maximum [m] Average [m] 
+1. 0. 4.4168e-003 1.4396e-003 
+
+TABLE 23
+Model > Static Structural > Solution > Stress Safety Tools
+
+Object Name Stress Tool 
+State Solved 
+Definition 
+Theory Max Equivalent Stress 
+Stress Limit Type Tensile Yield Per Material 
+
+TABLE 24
+Model > Static Structural > Solution > Stress Tool > Results
+
+Object Name Safety Factor 
+State Solved 
+Scope 
+Scoping Method Geometry Selection 
+Geometry All Bodies 
+Definition 
+Type Safety Factor 
+By Time 
+Display Time Last 
+Separate Data by Entity No 
+Calculate Time History Yes 
+Identifier  
+Suppressed No 
+Integration Point Results 
+Display Option Averaged 
+Average Across Bodies No 
+Results 
+Minimum 2.8598e-003  
+Minimum Occurs On Solid 
+Information 
+Time 1. s 
+Load Step 1 
+Substep 1 
+Iteration Number 1 
+
+FIGURE 6
+Model > Static Structural > Solution > Stress Tool > Safety Factor
+
+Mechanical_Report_Files/Figure0007.png
+
+TABLE 25
+Model > Static Structural > Solution > Stress Tool > Safety Factor
+
+Time [s] Minimum Maximum Average 
+1. 2.8598e-003 15. 0.8681 
+
+Material Data 
+Copper Alloy
+TABLE 26
+Copper Alloy > Constants
+
+
+Density 8300 kg m^-3 
+Coefficient of Thermal Expansion 1.8e-005 C^-1 
+Specific Heat 385 J kg^-1 C^-1 
+Thermal Conductivity 401 W m^-1 C^-1 
+
+TABLE 27
+Copper Alloy > Color
+
+
+Red  Green  Blue  
+208 146 88 
+
+TABLE 28
+Copper Alloy > Compressive Ultimate Strength
+
+
+Compressive Ultimate Strength Pa 
+0 
+
+TABLE 29
+Copper Alloy > Compressive Yield Strength
+
+
+Compressive Yield Strength Pa 
+2.8e+008 
+
+TABLE 30
+Copper Alloy > Tensile Yield Strength
+
+
+Tensile Yield Strength Pa 
+2.8e+008 
+
+TABLE 31
+Copper Alloy > Tensile Ultimate Strength
+
+
+Tensile Ultimate Strength Pa 
+4.3e+008 
+
+TABLE 32
+Copper Alloy > Isotropic Secant Coefficient of Thermal Expansion
+
+
+Zero-Thermal-Strain Reference Temperature C 
+22 
+
+TABLE 33
+Copper Alloy > Isotropic Resistivity
+
+
+Resistivity kg m^3 A^-2 s^-3 Temperature C 
+1.548e-008 0 
+1.694e-008 20 
+2.277e-008 100 
+
+TABLE 34
+Copper Alloy > Isotropic Elasticity
+
+
+Young's Modulus Pa Poisson's Ratio  Bulk Modulus Pa Shear Modulus Pa Temperature C 
+1.1e+011 0.34 1.1458e+011 4.1045e+010  
+
+TABLE 35
+Copper Alloy > Isotropic Relative Permeability
+
+
+Relative Permeability  
+1 
+
+Concrete
+TABLE 36
+Concrete > Constants
+
+
+Density 2392 kg m^-3 
+Tensile Yield Strength 1.095e+006 Pa 
+Tensile Ultimate Strength 1.196e+006 Pa 
+Coefficient of Thermal Expansion 1.015e-005 C^-1 
+Thermal Conductivity 2.071 W m^-1 C^-1 
+Specific Heat 936.3 J kg^-1 C^-1 
+Resistivity 58500 kg m^3 A^-2 s^-3 
+Electric Loss Tangent 3.162e-003  
+Relative Permittivity 9.798  
+
+TABLE 37
+Concrete > Opacity
+
+
+Red  Green  Blue  
+153 153 153 
+Opacity  
+0.8 
+Metallic Finish  
+0 
+
+TABLE 38
+Concrete > Isotropic Elasticity
+
+
+Young's Modulus Pa Poisson's Ratio  Bulk Modulus Pa Shear Modulus Pa Temperature C 
+1.936e+010 0.1414 8.998e+009 8.4808e+009 23 
+
+TABLE 39
+Concrete > Isotropic Secant Coefficient of Thermal Expansion
+
+
+Zero-Thermal-Strain Reference Temperature C 
+20 
+
+TABLE 40
+Concrete > Climate change CO2-eq
+
+
+Climate change CO2-eq dBA 
+0.1229 
+
+TABLE 41
+Concrete > Embodied energy
+
+
+Embodied energy J kg^-1 
+8.37e+005 
+
+TABLE 42
+Concrete > Recycle
+
+
+Recycle  
+1 

@@ -1,0 +1,1184 @@
+Mechanical_Report_Files/Logo.png 
+
+Project
+First Saved Thursday, February 20, 2025 
+Last Saved Thursday, February 20, 2025 
+Product Version 2025 R1 
+Save Project Before Solution No 
+Save Project After Solution No 
+
+Mechanical_Report_Files/Figure0001.png
+
+Contents
+Units
+Model
+Geometry Imports
+Geometry Import
+Geometry
+Parts
+Construction Geometry
+Path
+Surface
+Materials
+Coordinate Systems
+Connections
+Contacts
+Contact Regions
+Mesh
+Named Selections
+Steady-State Thermal
+Initial Temperature
+Analysis Settings
+Loads
+Solution
+Solution Information
+Results
+Probes
+Static Structural
+Analysis Settings
+Standard Earth Gravity
+Fixed Support
+Imported Load (Solution) 
+Imported Body Temperature
+Solution
+Solution Information
+Results
+Material Data
+Structural Steel
+Units
+TABLE 1
+
+Unit System Metric (m, kg, N, s, V, A) Degrees rad/s Celsius 
+Angle Degrees 
+Rotational Velocity rad/s 
+Temperature Celsius 
+
+Model
+TABLE 2
+Model > Geometry Imports
+
+Object Name Geometry Imports 
+State Solved 
+
+TABLE 3
+Model > Geometry Imports > Geometry Import
+
+Object Name Geometry Import 
+State Solved 
+Definition 
+Source ''''\examples\LONGBAR.x_t 
+Type Parasolid 
+Basic Geometry Options 
+Solid Bodies Yes 
+Surface Bodies Yes 
+Line Bodies No 
+Attributes No 
+Named Selections Yes 
+Named Selection Key NS 
+Material Properties No 
+Advanced Geometry Options 
+Use Associativity Yes 
+Coordinate Systems No 
+Reader Mode Saves Updated File No 
+Use Instances Yes 
+Smart CAD Update Yes 
+Compare Parts On Update No 
+Analysis Type 3-D 
+Mixed Import Resolution None 
+Import Facet Quality Source 
+Clean Bodies On Import No 
+Stitch Surfaces On Import None 
+Decompose Disjoint Geometry Yes 
+Enclosure and Symmetry Processing Yes 
+
+Geometry
+TABLE 4
+Model > Geometry
+
+Object Name Geometry 
+State Fully Defined 
+Definition 
+Source ''''\examples\LONGBAR.x_t 
+Type Parasolid 
+Length Unit Meters 
+Element Control Program Controlled 
+Display Style Body Color 
+Bounding Box 
+Length X 2. m 
+Length Y 2. m 
+Length Z 20. m 
+Properties 
+Volume 80. m³ 
+Mass 6.28e+005 kg 
+Scale Factor Value 1. 
+Statistics 
+Bodies 4 
+Active Bodies 4 
+Nodes 3565 
+Elements 586 
+Mesh Metric None 
+Update Options 
+Assign Default Material No 
+Basic Geometry Options 
+Solid Bodies Yes 
+Surface Bodies Yes 
+Line Bodies No 
+Parameters None 
+Attributes No 
+Named Selections Yes 
+Named Selection Key NS 
+Material Properties No 
+Advanced Geometry Options 
+Use Associativity Yes 
+Coordinate Systems No 
+Reader Mode Saves Updated File No 
+Use Instances Yes 
+Smart CAD Update Yes 
+Compare Parts On Update No 
+Analysis Type 3-D 
+Mixed Import Resolution None 
+Import Facet Quality Source 
+Clean Bodies On Import No 
+Stitch Surfaces On Import None 
+Decompose Disjoint Geometry Yes 
+Enclosure and Symmetry Processing Yes 
+
+TABLE 5
+Model > Geometry > Parts
+
+Object Name Part4 Part3 Part2 Part1 
+State Meshed 
+Graphics Properties 
+Visible Yes 
+Transparency 1 
+Definition 
+Suppressed No 
+Stiffness Behavior Flexible 
+Coordinate System Default Coordinate System 
+Reference Temperature By Environment 
+Treatment None 
+Material 
+Assignment Structural Steel 
+Nonlinear Effects Yes 
+Thermal Strain Effects Yes 
+Bounding Box 
+Length X 2. m 
+Length Y 2. m 
+Length Z 3. m 10. m 5. m 2. m 
+Properties 
+Volume 12. m³ 40. m³ 20. m³ 8. m³ 
+Mass 94200 kg 3.14e+005 kg 1.57e+005 kg 62800 kg 
+Centroid X 1. m 
+Centroid Y 1. m 
+Centroid Z 18.5 m 12. m 4.5 m 1. m 
+Moment of Inertia Ip1 1.0205e+005 kg·m² 2.7213e+006 kg·m² 3.7942e+005 kg·m² 41867 kg·m² 
+Moment of Inertia Ip2 1.0205e+005 kg·m² 2.7213e+006 kg·m² 3.7942e+005 kg·m² 41867 kg·m² 
+Moment of Inertia Ip3 62800 kg·m² 2.0933e+005 kg·m² 1.0467e+005 kg·m² 41867 kg·m² 
+Statistics 
+Nodes 1020 824 965 756 
+Elements 175 126 160 125 
+Mesh Metric None 
+
+TABLE 6
+Model > Construction Geometry
+
+Object Name Construction Geometry 
+State Fully Defined 
+Display 
+Show Mesh No 
+
+TABLE 7
+Model > Construction Geometry > Paths
+
+Object Name Path 
+State Fully Defined 
+Definition 
+Path Type Two Points 
+Path Coordinate System Global Coordinate System 
+Number of Sampling Points 47. 
+Suppressed No 
+Start 
+Coordinate System Global Coordinate System 
+Start X Coordinate 0. m 
+Start Y Coordinate 2. m 
+Start Z Coordinate 20. m 
+Location Defined 
+End 
+Coordinate System Global Coordinate System 
+End X Coordinate 2. m 
+End Y Coordinate 0. m 
+End Z Coordinate 0. m 
+Location Defined 
+
+TABLE 8
+Model > Construction Geometry > Surface
+
+Object Name Surface 
+State Fully Defined 
+Definition 
+Coordinate System Coordinate System 2 
+Suppressed No 
+
+TABLE 9
+Model > Materials
+
+Object Name Materials 
+State Fully Defined 
+Statistics 
+Materials 1 
+Material Assignments 0 
+
+Coordinate Systems
+TABLE 10
+Model > Coordinate Systems > Coordinate System
+
+Object Name Global Coordinate System Coordinate System Coordinate System 2 
+State Fully Defined 
+Definition 
+Type Cartesian 
+Coordinate System ID 0.    
+Coordinate System   Program Controlled 
+APDL Name   
+Suppressed   No 
+Origin 
+Origin X 0. m 
+Origin Y 0. m 
+Origin Z 0. m 
+Define By   Global Coordinates 
+Location   Defined 
+Directional Vectors 
+X Axis Data [ 1. 0. 0. ] [ 0. 0. 1. ] 
+Y Axis Data [ 0. 1. 0. ] [ -1. 0. 0. ] 
+Z Axis Data [ 0. 0. 1. ] [ 0. -1. 0. ] 
+Transfer Properties 
+Source  
+Read Only No 
+Principal Axis 
+Axis   X 
+Define By   Global X Axis Global Z Axis 
+Orientation About Principal Axis 
+Axis   Y 
+Define By   Default 
+Transformations 
+Base Configuration   Absolute 
+Transformed Configuration   [ 0. 0. 0. ] 
+
+Connections
+TABLE 11
+Model > Connections
+
+Object Name Connections 
+State Fully Defined 
+Auto Detection 
+Generate Automatic Connection On Refresh Yes 
+Transparency 
+Enabled Yes 
+Statistics 
+Contacts 3 
+Active Contacts 3 
+Joints 0 
+Active Joints 0 
+Beams 0 
+Active Beams 0 
+Bearings 0 
+Active Bearings 0 
+Springs 0 
+Active Springs 0 
+Body Interactions 0 
+Active Body Interactions 0 
+
+TABLE 12
+Model > Connections > Contacts
+
+Object Name Contacts 
+State Fully Defined 
+Definition 
+Connection Type Contact 
+Scope 
+Scoping Method Geometry Selection 
+Geometry All Bodies 
+Auto Detection 
+Tolerance Type Slider 
+Tolerance Slider 0. 
+Tolerance Value 5.0498e-002 m 
+Use Range No 
+Face/Face Yes 
+Face-Face Angle Tolerance 75. ° 
+Face Overlap Tolerance Off 
+Cylindrical Faces Include 
+Face/Edge No 
+Edge/Edge No 
+Priority Include All 
+Group By Bodies 
+Search Across Bodies 
+Statistics 
+Connections 3 
+Active Connections 3 
+
+TABLE 13
+Model > Connections > Contacts > Contact Regions
+
+Object Name Contact Region Contact Region 2 Contact Region 3 
+State Fully Defined 
+Scope 
+Scoping Method Geometry Selection 
+Contact 1 Face 
+Target 1 Face 
+Contact Bodies Part4 Part3 Part2 
+Target Bodies Part3 Part2 Part1 
+Protected No 
+Definition 
+Type Bonded 
+Scope Mode Automatic 
+Behavior Program Controlled 
+Trim Contact Program Controlled 
+Trim Tolerance 5.0498e-002 m 
+Contact APDL Name  
+Target APDL Name  
+Suppressed No 
+Display 
+Element Normals No 
+Advanced 
+Formulation Program Controlled 
+Small Sliding Program Controlled 
+Detection Method Program Controlled 
+Penetration Tolerance Program Controlled 
+Elastic Slip Tolerance Program Controlled 
+Normal Stiffness Program Controlled 
+Update Stiffness Program Controlled 
+Thermal Conductance Program Controlled 
+Pinball Region Program Controlled 
+Geometric Modification 
+Contact Geometry Correction None 
+Target Geometry Correction None 
+
+Mesh
+TABLE 14
+Model > Mesh
+
+Object Name Mesh 
+State Solved 
+Display 
+Display Style Use Geometry Setting 
+Defaults 
+Physics Preference Mechanical 
+Solver Preference Mechanical APDL 
+Element Order Program Controlled 
+Element Size Default 
+Sizing 
+Use Adaptive Sizing Yes 
+Resolution Default (2) 
+Mesh Defeaturing Yes 
+Defeature Size Default 
+Transition Fast 
+Span Angle Center Coarse 
+Initial Size Seed Assembly 
+Bounding Box Diagonal 20.199 m 
+Average Surface Area 8.0 m² 
+Minimum Edge Length 2.0 m 
+Quality 
+Check Mesh Quality Yes, Errors 
+Error Limits Aggressive Mechanical 
+Target Element Quality Default (5.e-002) 
+Smoothing Medium 
+Mesh Metric None 
+Inflation 
+Use Automatic Inflation None 
+Inflation Option Smooth Transition 
+Transition Ratio 0.272 
+Maximum Layers 5 
+Growth Rate 1.2 
+Inflation Algorithm Pre 
+Inflation Element Type Wedges 
+View Advanced Options No 
+Advanced 
+Number of CPUs for Parallel Part Meshing Program Controlled 
+Straight Sided Elements No 
+Rigid Body Behavior Dimensionally Reduced 
+Triangle Surface Mesher Program Controlled 
+Topology Checking Yes 
+Pinch Tolerance Please Define 
+Generate Pinch on Refresh No 
+Automatic Methods 
+Sheet Body Method Quad Dominant 
+Sweepable Body Method Sweep 
+Statistics 
+Nodes 3565 
+Elements 586 
+Show Detailed Statistics No 
+
+Named Selections
+TABLE 15
+Model > Named Selections > Named Selections
+
+Object Name Face1 Face2 Face3 Body1 
+State Fully Defined 
+Scope 
+Scoping Method Worksheet 
+Geometry 1 Face 2 Faces 4 Faces 
+Definition 
+Send to Solver Yes 
+Protected Program Controlled 
+Visible Yes 
+Program Controlled Inflation Exclude 
+Statistics 
+Type Manual 
+Total Selection 1 Face 2 Faces 4 Faces 
+Surface Area 4. m² 30. m² 16. m² 
+Suppressed 0 
+Used by Mesh Worksheet No 
+Tolerance 
+Tolerance Type Program Controlled 
+Zero Tolerance 1.e-008 
+Relative Tolerance 1.e-003 
+Angular Tolerance 1. ° 
+
+Steady-State Thermal
+TABLE 16
+Model > Analysis
+
+Object Name Steady-State Thermal 
+State Solved 
+Definition 
+Physics Type Thermal 
+Analysis Type Steady-State 
+Solver Target Mechanical APDL 
+Options 
+Generate Input Only No 
+
+TABLE 17
+Model > Steady-State Thermal > Initial Condition
+
+Object Name Initial Temperature 
+State Fully Defined 
+Definition 
+Initial Temperature Uniform Temperature 
+Initial Temperature Value 22. °C 
+
+TABLE 18
+Model > Steady-State Thermal > Analysis Settings
+
+Object Name Analysis Settings 
+State Fully Defined 
+Step Controls 
+Number Of Steps 2. 
+Current Step Number 1. 
+Step End Time 1. s 
+Auto Time Stepping Program Controlled 
+Solver Controls 
+Solver Type Program Controlled 
+Solver Pivot Checking Program Controlled 
+Radiosity Controls 
+Radiosity Solver Program Controlled 
+Flux Convergence 1.e-004  
+Maximum Iteration 1000.  
+Solver Tolerance 0.1 W/m² 
+Over Relaxation 0.1  
+Hemicube Resolution 10.  
+Nonlinear Controls 
+Heat Convergence Program Controlled 
+Temperature Convergence Program Controlled 
+Line Search Program Controlled 
+Advanced 
+Contact Split (DMP) Program Controlled 
+Output Controls 
+Output Selection None 
+Calculate Thermal Flux Yes 
+Contact Data Yes 
+Nodal Forces Yes 
+Volume and Energy Yes 
+Euler Angles Yes 
+General Miscellaneous No 
+Contact Miscellaneous No 
+Store Results At All Time Points 
+Result File Compression Program Controlled 
+Analysis Data Management 
+Solver Files Directory ''''\SteadyStateThermal\ 
+Future Analysis None 
+Scratch Solver Files Directory  
+Save MAPDL db No 
+Contact Summary Program Controlled 
+Delete Unneeded Files Yes 
+Nonlinear Solution Yes 
+Solver Units Active System 
+Solver Unit System mks 
+
+TABLE 19
+Model > Steady-State Thermal > Analysis Settings
+Step-Specific "Step Controls"
+
+Step Step End Time 
+1 1. s 
+2 2. s 
+
+TABLE 20
+Model > Steady-State Thermal > Loads
+
+Object Name Temperature Temperature 2 Radiation 
+State Fully Defined 
+Scope 
+Scoping Method Named Selection 
+Named Selection Face1 Face2 Face3 
+Definition 
+Type Temperature Radiation 
+Magnitude Tabular Data   
+Suppressed No 
+Correlation   Surface to Surface 
+Emissivity   1. (step applied) 
+Ambient Temperature   Tabular Data 
+Enclosure   1.  
+Enclosure Type   Open 
+Tabular Data 
+Independent Variable Time   
+
+FIGURE 1
+Model > Steady-State Thermal > Temperature
+
+Mechanical_Report_Files/Figure0002.png
+
+TABLE 21
+Model > Steady-State Thermal > Temperature
+
+Steps Time [s] Temperature [°C] 
+1 0. 22. 
+1. 30. 
+2 2. 40. 
+
+FIGURE 2
+Model > Steady-State Thermal > Temperature 2
+
+Mechanical_Report_Files/Figure0003.png
+
+TABLE 22
+Model > Steady-State Thermal > Temperature 2
+
+Steps Time [s] Temperature [°C] 
+1 0. 22. 
+1. 50. 
+2 2. 80. 
+
+FIGURE 3
+Model > Steady-State Thermal > Radiation
+
+Mechanical_Report_Files/Figure0004.png
+
+TABLE 23
+Model > Steady-State Thermal > Radiation
+
+Steps Time [s] Emissivity Ambient Temperature [°C] 
+1 0. = 1. 22. 
+1. 1. 30. 
+2 2. = 1. 40. 
+
+Solution
+TABLE 24
+Model > Steady-State Thermal > Solution
+
+Object Name Solution 
+State Solved 
+Adaptive Mesh Refinement 
+Max Refinement Loops 1. 
+Refinement Depth 2. 
+Information 
+Status Done 
+MAPDL Elapsed Time 4. s 
+MAPDL Memory Used 100. MB 
+MAPDL Result File Size 1.1875 MB 
+Post Processing 
+Beam Section Results No 
+On Demand Stress/Strain No 
+
+TABLE 25
+Model > Steady-State Thermal > Solution > Solution Information
+
+Object Name Solution Information 
+State Solved 
+Solution Information 
+Solution Output Solver Output 
+Update Interval 2.5 s 
+Display Points All 
+FE Connection Visibility 
+Activate Visibility Yes 
+Display All FE Connectors 
+Draw Connections Attached To All Nodes 
+Line Color Connection Type 
+Visible on Results No 
+Line Thickness Single 
+Display Type Lines 
+
+TABLE 26
+Model > Steady-State Thermal > Solution > Results
+
+Object Name Temperature Temperature 2 Temperature 3 Temperature 4 Total Heat Flux Directional Heat Flux Thermal Error 
+State Solved 
+Scope 
+Scoping Method Geometry Selection Named Selection Path Surface Geometry Selection 
+Geometry All Bodies   All Bodies 
+Named Selection   Body1   
+Path   Path   
+Surface   Surface   
+Definition 
+Type Temperature Total Heat Flux Directional Heat Flux Thermal Error 
+By Maximum Over Time Time 
+Separate Data by Entity No   No 
+Identifier  
+Suppressed No 
+Display Time   Last 
+Calculate Time History   Yes 
+Orientation   Z Axis   
+Coordinate System   Coordinate System 2   
+Results 
+Minimum 40. °C 65.938 °C 40. °C 8.943 W/m² -185.83 W/m² 4.0378e-011  
+Maximum 80. °C 564.54 W/m² 4.4474 W/m² 0.32432  
+Minimum Occurs On Part4 Part1 Part4 Part2 Part4 
+Maximum Occurs On Part1 Part2 
+Average   73.463 °C 49.258 °C 49.101 °C 163. W/m² -18.452 W/m² 6.8861e-003  
+Minimum Value Over Time 
+Minimum   43.298 °C 30. °C 6.0572 W/m² -185.83 W/m² 9.921e-012  
+Maximum   65.938 °C 40. °C 8.943 W/m² -83.2 W/m² 4.0378e-011  
+Maximum Value Over Time 
+Minimum   50. °C 264.68 W/m² 1.875 W/m² 7.4148e-002  
+Maximum   80. °C 564.54 W/m² 4.4474 W/m² 0.32432  
+Information 
+Time   2. s 
+Load Step   2 
+Substep   1 
+Iteration Number   10 
+Graph Controls 
+X-Axis   S   
+Integration Point Results 
+Display Option   Averaged   
+Average Across Bodies   No   
+
+FIGURE 4
+Model > Steady-State Thermal > Solution > Temperature 2
+
+Mechanical_Report_Files/Figure0005.png
+
+TABLE 27
+Model > Steady-State Thermal > Solution > Temperature 2
+
+Time [s] Minimum [°C] Maximum [°C] Average [°C] 
+1. 43.298 50. 46.871 
+2. 65.938 80. 73.463 
+
+FIGURE 5
+Model > Steady-State Thermal > Solution > Temperature 3
+
+Mechanical_Report_Files/Figure0006.png
+
+TABLE 28
+Model > Steady-State Thermal > Solution > Temperature 3
+
+Length [m] Value [°C] 
+0. 40. 
+0.42081 40.09 
+0.84163 40.179 
+1.2624 40.269 
+1.6833 40.358 
+2.1041 40.446 
+2.5249 40.531 
+2.9457 40.614 
+3.3665 40.699 
+3.7873 40.794 
+4.2081 40.899 
+4.6289 41.014 
+5.0498 41.14 
+5.4706 41.278 
+5.8914 41.429 
+6.3122 41.595 
+6.733 41.777 
+7.1538 41.977 
+7.5746 42.197 
+7.9954 42.44 
+8.4163 42.707 
+8.8371 43.001 
+9.2579 43.325 
+9.6787 43.683 
+10.1 44.077 
+10.52 44.511 
+10.941 44.991 
+11.362 45.52 
+11.783 46.104 
+12.204 46.749 
+12.624 47.459 
+13.045 48.238 
+13.466 49.116 
+13.887 50.076 
+14.308 51.134 
+14.728 52.303 
+15.149 53.595 
+15.57 55.02 
+15.991 56.593 
+16.412 58.324 
+16.833 60.223 
+17.253 62.295 
+17.674 64.537 
+18.095 66.906 
+18.516 69.431 
+18.937 72.017 
+19.357 74.653 
+19.778 77.32 
+20.199 80. 
+
+FIGURE 6
+Model > Steady-State Thermal > Solution > Temperature 4
+
+Mechanical_Report_Files/Figure0007.png
+
+TABLE 29
+Model > Steady-State Thermal > Solution > Temperature 4
+
+Time [s] Minimum [°C] Maximum [°C] 
+1. 30. 50. 
+2. 40. 80. 
+
+FIGURE 7
+Model > Steady-State Thermal > Solution > Total Heat Flux
+
+Mechanical_Report_Files/Figure0008.png
+
+TABLE 30
+Model > Steady-State Thermal > Solution > Total Heat Flux
+
+Time [s] Minimum [W/m²] Maximum [W/m²] Average [W/m²] 
+1. 6.0572 264.68 80.071 
+2. 8.943 564.54 163. 
+
+FIGURE 8
+Model > Steady-State Thermal > Solution > Directional Heat Flux
+
+Mechanical_Report_Files/Figure0009.png
+
+TABLE 31
+Model > Steady-State Thermal > Solution > Directional Heat Flux
+
+Time [s] Minimum [W/m²] Maximum [W/m²] Average [W/m²] 
+1. -83.2 1.875 -8.6237 
+2. -185.83 4.4474 -18.452 
+
+FIGURE 9
+Model > Steady-State Thermal > Solution > Thermal Error
+
+Mechanical_Report_Files/Figure0010.png
+
+TABLE 32
+Model > Steady-State Thermal > Solution > Thermal Error
+
+Time [s] Minimum Maximum Average 
+1. 9.921e-012 7.4148e-002 1.5247e-003 
+2. 4.0378e-011 0.32432 6.8861e-003 
+
+TABLE 33
+Model > Steady-State Thermal > Solution > Probes
+
+Object Name Temperature Probe Heat Flux Probe Reaction Probe Radiation Probe 
+State Solved 
+Definition 
+Type Temperature Heat Flux Reaction Radiation Probe 
+Location Method Coordinate System Geometry Selection Boundary Condition 
+Location Coordinate System 2   
+X Coordinate 0. m   
+Y Coordinate 0. m   
+Z Coordinate 0. m   
+Suppressed No 
+Orientation   Global Coordinate System   
+Geometry   1 Face   
+Boundary Condition   Radiation 
+Options 
+Display Time End Time 
+Result Selection   Z Axis   All 
+Spatial Resolution   Use Maximum   
+Results 
+Temperature 80. °C   
+Z Axis   389.5 W/m²   
+Heat   -52.244 W   
+Outgoing Net Radiation   1525.7 W 
+Emitted Radiation   17867 W 
+Reflected Radiation   13.188 W 
+Incident Radiation   16355 W 
+Maximum Value Over Time 
+Temperature 80. °C   
+Z Axis   389.5 W/m²   
+Heat   -32.482 W   
+Minimum Value Over Time 
+Temperature 50. °C   
+Z Axis   186.67 W/m²   
+Heat   -52.244 W   
+Information 
+Time 2. s 
+Load Step 2 
+Substep 1 
+Iteration Number 10 
+
+FIGURE 10
+Model > Steady-State Thermal > Solution > Temperature Probe
+
+Mechanical_Report_Files/Figure0011.png
+
+TABLE 34
+Model > Steady-State Thermal > Solution > Temperature Probe
+
+Time [s] Temperature Probe [°C] 
+1. 50. 
+2. 80. 
+
+FIGURE 11
+Model > Steady-State Thermal > Solution > Heat Flux Probe
+
+Mechanical_Report_Files/Figure0012.png
+
+TABLE 35
+Model > Steady-State Thermal > Solution > Heat Flux Probe
+
+Time [s] Heat Flux Probe (Z) [W/m²] 
+1. 186.67 
+2. 389.5 
+
+FIGURE 12
+Model > Steady-State Thermal > Solution > Reaction Probe
+
+Mechanical_Report_Files/Figure0013.png
+
+TABLE 36
+Model > Steady-State Thermal > Solution > Reaction Probe
+
+Time [s] Reaction Probe [W] 
+1. -32.482 
+2. -52.244 
+
+FIGURE 13
+Model > Steady-State Thermal > Solution > Radiation Probe
+
+Mechanical_Report_Files/Figure0014.png
+
+TABLE 37
+Model > Steady-State Thermal > Solution > Radiation Probe
+
+Time [s] Radiation Probe (Outgoing Net Radiation) [W] Radiation Probe (Emitted Radiation) [W] Radiation Probe (Reflected Radiation) [W] Radiation Probe (Incident Radiation) [W] 
+1. 732.13 15095 0.16103 14363 
+2. 1525.7 17867 13.188 16355 
+
+Static Structural
+TABLE 38
+Model > Analysis
+
+Object Name Static Structural 
+State Solved 
+Definition 
+Physics Type Structural 
+Analysis Type Static Structural 
+Solver Target Mechanical APDL 
+Options 
+Environment Temperature 22. °C 
+Generate Input Only No 
+
+TABLE 39
+Model > Static Structural > Analysis Settings
+
+Object Name Analysis Settings 
+State Fully Defined 
+Step Controls 
+Number Of Steps 1. 
+Current Step Number 1. 
+Step End Time 1. s 
+Auto Time Stepping Program Controlled 
+Solver Controls 
+Solver Type Program Controlled 
+Weak Springs Off 
+Solver Pivot Checking Program Controlled 
+Large Deflection Off 
+Inertia Relief Off 
+Quasi-Static Solution Off 
+Rotordynamics Controls 
+Coriolis Effect Off 
+Restart Controls 
+Generate Restart Points Program Controlled 
+Retain Files After Full Solve No 
+Combine Restart Files Program Controlled 
+Nonlinear Controls 
+Newton-Raphson Option Program Controlled 
+Force Convergence Program Controlled 
+Moment Convergence Program Controlled 
+Displacement Convergence Program Controlled 
+Rotation Convergence Program Controlled 
+Line Search Program Controlled 
+Stabilization Program Controlled 
+Advanced 
+Inverse Option No 
+Contact Split (DMP) Program Controlled 
+Output Controls 
+Output Selection None 
+Stress Yes 
+Back Stress No 
+Strain Yes 
+Contact Data Yes 
+Nonlinear Data No 
+Nodal Forces No 
+Volume and Energy Yes 
+Euler Angles Yes 
+General Miscellaneous No 
+Contact Miscellaneous No 
+Store Results At All Time Points 
+Result File Compression Program Controlled 
+Analysis Data Management 
+Solver Files Directory ''''\StaticStructural\ 
+Future Analysis None 
+Scratch Solver Files Directory  
+Save MAPDL db No 
+Contact Summary Program Controlled 
+Delete Unneeded Files Yes 
+Nonlinear Solution No 
+Solver Units Active System 
+Solver Unit System mks 
+
+TABLE 40
+Model > Static Structural > Accelerations
+
+Object Name Standard Earth Gravity 
+State Suppressed 
+Scope 
+Geometry All Bodies 
+Definition 
+Coordinate System Global Coordinate System 
+X Component 0. m/s² (ramped) 
+Y Component -9.8066 m/s² (ramped) 
+Z Component 0. m/s² (ramped) 
+Suppressed Yes 
+Direction -Y Direction 
+
+FIGURE 14
+Model > Static Structural > Standard Earth Gravity
+
+Mechanical_Report_Files/Figure0015.png
+
+TABLE 41
+Model > Static Structural > Loads
+
+Object Name Fixed Support 
+State Fully Defined 
+Scope 
+Scoping Method Geometry Selection 
+Geometry 1 Face 
+Definition 
+Type Fixed Support 
+Suppressed No 
+
+TABLE 42
+Model > Static Structural > Imported Load (Solution) 
+
+Object Name Imported Load (Solution)  
+State Fully Defined 
+Definition 
+Type Imported Data 
+Interpolation Type Mechanical Results Transfer 
+Suppressed No 
+Source Steady-State Thermal 
+Data Management 
+Delete Mapped Data Files Yes 
+
+TABLE 43
+Model > Static Structural > Imported Load (Solution) > Imported Body Temperature
+
+Object Name Imported Body Temperature 
+State Solved 
+Scope 
+Scoping Method Geometry Selection 
+Geometry 4 Bodies 
+Definition 
+Type Imported Body Temperature 
+Tabular Loading Program Controlled 
+Suppressed No 
+Source Environment Steady-State Thermal 
+Source Time Worksheet 
+
+Model > Static Structural > Imported Load (Solution) > Imported Body Temperature
+
+ Source Time (s) Analysis Time (s) Scale Offset (Δ°C) 
+1 End Time 1 1 0 
+*     
+
+Solution
+TABLE 44
+Model > Static Structural > Solution
+
+Object Name Solution 
+State Solved 
+Adaptive Mesh Refinement 
+Max Refinement Loops 1. 
+Refinement Depth 2. 
+Information 
+Status Done 
+MAPDL Elapsed Time 4. s 
+MAPDL Memory Used 107. MB 
+MAPDL Result File Size 1.1875 MB 
+Post Processing 
+Beam Section Results No 
+On Demand Stress/Strain No 
+
+TABLE 45
+Model > Static Structural > Solution > Solution Information
+
+Object Name Solution Information 
+State Solved 
+Solution Information 
+Solution Output Solver Output 
+Newton-Raphson Residuals 0 
+Identify Element Violations 0 
+Update Interval 2.5 s 
+Display Points All 
+FE Connection Visibility 
+Activate Visibility Yes 
+Display All FE Connectors 
+Draw Connections Attached To All Nodes 
+Line Color Connection Type 
+Visible on Results No 
+Line Thickness Single 
+Display Type Lines 
+
+TABLE 46
+Model > Static Structural > Solution > Results
+
+Object Name Equivalent Stress Thermal Strain 
+State Solved 
+Scope 
+Scoping Method Geometry Selection 
+Geometry All Bodies 
+Definition 
+Type Equivalent (von-Mises) Stress Thermal Strain 
+By Time 
+Display Time Last 
+Separate Data by Entity No 
+Calculate Time History Yes 
+Identifier  
+Suppressed No 
+Orientation   X Axis 
+Coordinate System   Global Coordinate System 
+Integration Point Results 
+Display Option Averaged 
+Average Across Bodies No 
+Results 
+Minimum 5938.6 Pa 2.16e-004 m/m 
+Maximum 1.3802e+008 Pa 6.9601e-004 m/m 
+Average 4.3391e+006 Pa 3.625e-004 m/m 
+Minimum Occurs On Part3 Part4 
+Maximum Occurs On Part4 Part1 
+Information 
+Time 1. s 
+Load Step 1 
+Substep 1 
+Iteration Number 1 
+
+FIGURE 15
+Model > Static Structural > Solution > Equivalent Stress
+
+Mechanical_Report_Files/Figure0016.png
+
+TABLE 47
+Model > Static Structural > Solution > Equivalent Stress
+
+Time [s] Minimum [Pa] Maximum [Pa] Average [Pa] 
+1. 5938.6 1.3802e+008 4.3391e+006 
+
+FIGURE 16
+Model > Static Structural > Solution > Thermal Strain
+
+Mechanical_Report_Files/Figure0017.png
+
+TABLE 48
+Model > Static Structural > Solution > Thermal Strain
+
+Time [s] Minimum [m/m] Maximum [m/m] Average [m/m] 
+1. 2.16e-004 6.9601e-004 3.625e-004 
+
+Material Data 
+Structural Steel
+TABLE 49
+Structural Steel > Constants
+
+
+Density  7850 kg m^-3 
+Isotropic Secant Coefficient of Thermal Expansion 1.2e-005 C^-1 
+Specific Heat Constant Pressure 434 J kg^-1 C^-1 
+Isotropic Thermal Conductivity 60.5 W m^-1 C^-1 
+Isotropic Resistivity 1.7e-007 kg m^3 A^-2 s^-3 
+
+TABLE 50
+Structural Steel > Appearance 
+
+
+Red  Green  Blue  
+132 139 179 
+
+TABLE 51
+Structural Steel > Compressive Ultimate Strength 
+
+
+Compressive Ultimate Strength Pa 
+0 
+
+TABLE 52
+Structural Steel > Compressive Yield Strength 
+
+
+Compressive Yield Strength Pa 
+2.5e+008 
+
+TABLE 53
+Structural Steel > Tensile Yield Strength 
+
+
+Tensile Yield Strength Pa 
+2.5e+008 
+
+TABLE 54
+Structural Steel > Tensile Ultimate Strength 
+
+
+Tensile Ultimate Strength Pa 
+4.6e+008 
+
+TABLE 55
+Structural Steel > Isotropic Secant Coefficient of Thermal Expansion
+
+
+Zero-Thermal-Strain Reference Temperature C 
+22 
+
+TABLE 56
+Structural Steel > S-N Curve 
+
+
+Alternating Stress Pa Cycles  Mean Stress Pa 
+3.999e+009 10 0 
+2.827e+009 20 0 
+1.896e+009 50 0 
+1.413e+009 100 0 
+1.069e+009 200 0 
+4.41e+008 2000 0 
+2.62e+008 10000 0 
+2.14e+008 20000 0 
+1.38e+008 1.e+005 0 
+1.14e+008 2.e+005 0 
+8.62e+007 1.e+006 0 
+
+TABLE 57
+Structural Steel > Strain-Life Parameters 
+
+
+Strength Coefficient Pa Strength Exponent  Ductility Coefficient  Ductility Exponent  Cyclic Strength Coefficient Pa Cyclic Strain Hardening Exponent  
+9.2e+008 -0.106 0.213 -0.47 1.e+009 0.2 
+
+TABLE 58
+Structural Steel > Isotropic Elasticity 
+
+
+Young's Modulus Pa Poisson's Ratio  Bulk Modulus Pa Shear Modulus Pa Temperature C 
+2.e+011 0.3 1.6667e+011 7.6923e+010  
+
+TABLE 59
+Structural Steel > Isotropic Relative Permeability 
+
+
+Relative Permeability  
+10000 

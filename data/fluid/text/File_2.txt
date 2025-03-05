@@ -1,0 +1,199 @@
+
+
+
+Image file not found
+
+Ansys Fluent Simulation Report
+
+
+Analyst	''''
+Date	2/25/2025 04:56 PM
+
+Table of Contents
+1 System Information
+2 Geometry and Mesh
+2.1 Mesh Size
+2.2 Mesh Quality
+2.3 Orthogonal Quality
+3 Simulation Setup
+3.1 Physics
+3.1.1 Models
+3.1.2 Material Properties
+3.1.3 Cell Zone Conditions
+3.1.4 Boundary Conditions
+3.1.5 Reference Values
+3.2 Solver Settings
+4 Run Information
+5 Solution Status
+6 Plots
+7 Contours
+8 Vectors
+9 Pathlines
+
+System Information
+
+Application	Fluent
+Settings	3d, double precision, pressure-based, laminar
+Version	25.1.0-10210
+Source Revision	3b709034ad
+Build Time	Nov 26 2024 13:29:29 EST
+CPU	13th Gen Intel(R) Core(TM) i7-13700H
+OS	Windows
+
+Geometry and Mesh
+
+Mesh Size
+
+Cells	Faces	Nodes
+436730	1752918	918115
+
+Mesh Quality
+
+Name	Type	Min Orthogonal Quality	Max Aspect Ratio
+enclosure-fluid	Mixed Cell	0.29008059	17.737793
+
+Orthogonal Quality
+Image file not found
+
+Simulation Setup
+
+Physics
+
+Models
+
+Model	Settings
+Space	3D
+Time	Steady
+Viscous	Laminar
+
+Material Properties
+Fluid	
+engine-oil	
+Density	889 kg/m^3
+Viscosity	1.06 kg/(m s)
+air	
+Density	1.225 kg/m^3
+Viscosity	1.7894e-05 kg/(m s)
+Solid	
+aluminum	
+Density	2719 kg/m^3
+
+Cell Zone Conditions
+Fluid	
+enclosure-fluid	
+Material Name	engine oil
+Specify source terms?	no
+Specify fixed values?	no
+Frame Motion?	no
+Porous zone?	no
+3D Fan Zone?	no
+
+Boundary Conditions
+Inlet	
+inlet	
+Velocity Specification Method	Magnitude, Normal to Boundary
+Reference Frame	Absolute
+Velocity Magnitude [m/s]	1
+Supersonic/Initial Gauge Pressure [Pa]	0
+Outlet	
+outlet	
+Backflow Reference Frame	Absolute
+Gauge Pressure [Pa]	0
+Pressure Profile Multiplier	1
+Backflow Direction Specification Method	Normal to Boundary
+Backflow Pressure Specification	Total Pressure
+Build artificial walls to prevent reverse flow?	no
+Radial Equilibrium Pressure Distribution	no
+Average Pressure Specification?	no
+Specify targeted mass flow rate	no
+Symmetry	
+symmetry2	symmetry
+symmetry1	symmetry
+Wall	
+wall	
+Wall Motion	Stationary Wall
+Shear Boundary Condition	No Slip
+
+Reference Values
+
+Area	1 m^2
+Density	1.225 kg/m^3
+Enthalpy	0 J/kg
+Length	1 m
+Pressure	0 Pa
+Temperature	288.16 K
+Velocity	1 m/s
+Viscosity	1.7894e-05 kg/(m s)
+Ratio of Specific Heats	1.4
+Yplus for Heat Tran. Coef.	300
+Reference Zone	enclosure-fluid
+
+Solver Settings
+Equations	
+Flow	True
+Numerics	
+Absolute Velocity Formulation	True
+Pseudo Time Explicit Relaxation Factors	
+Density	1
+Body Forces	1
+Explicit Momentum	0.5
+Explicit Pressure	0.5
+Pressure-Velocity Coupling	
+Type	Coupled
+Pseudo Time Method (Global Time Step)	True
+Discretization Scheme	
+Pressure	Second Order
+Momentum	Second Order Upwind
+Solution Limits	
+Minimum Absolute Pressure [Pa]	1
+Maximum Absolute Pressure [Pa]	5e+10
+Minimum Static Temperature [K]	1
+Maximum Static Temperature [K]	5000
+
+Run Information
+
+Number of Machines	1
+Number of Cores	1
+Case Read	22.681 seconds
+Data Read	1.55 seconds
+Virtual Current Memory	1.79925 GB
+Virtual Peak Memory	1.9117 GB
+Memory Per M Cell	2.67783
+
+Solution Status
+
+
+Iterations: 26
+
+Value	Absolute Criteria	Convergence Status
+continuity	0.000958442	0.001	Converged
+x-velocity	4.178878e-08	0.001	Converged
+y-velocity	1.637544e-08	0.001	Converged
+z-velocity	1.849263e-08	0.001	Converged
+
+Plots
+Residuals
+
+Residuals
+
+Contours
+contour-3
+contour-2
+contour-1
+
+contour-3
+Image file not found
+
+
+
+Vectors
+vector-1
+
+vector-1
+Image file not found
+
+Pathlines
+pathlines-1
+
+pathlines-1
+Image file not found

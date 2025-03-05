@@ -1,0 +1,464 @@
+{
+    "structural": {
+        "description": "Questions related to structural simulation analysis",
+        "questions": [
+            {
+                "qid": "a7e94b2c6f1d83052c9e",
+                "question": "Are there any stress concentrations exceeding material limits?"
+            },
+            {
+                "qid": "b12d8f45e3a670c92178",
+                "question": "Is the deformation primarily elastic?"
+            },
+            {
+                "qid": "c39e5d0af86b2417593c",
+                "question": "Are contact or boundary conditions properly enforced?"
+            },
+            {
+                "qid": "d46c2b17e50f38a4271d",
+                "question": "Do reaction forces balance external loads?"
+            },
+            {
+                "qid": "e57f1d63c42a0589b63e",
+                "question": "Is von Mises stress the appropriate failure criterion?"
+            },
+            {
+                "qid": "f68a3b09d15c7246a05f",
+                "question": "Is buckling a potential failure mode?"
+            },
+            {
+                "qid": "g79d4e72b36d9105834a",
+                "question": "Does material nonlinearity affect the solution?"
+            },
+            {
+                "qid": "h80e6f18a47e0327642b",
+                "question": "Are residual stresses significant?"
+            },
+            {
+                "qid": "i91f7a54c58f1549451c",
+                "question": "Is bending stress dominant over axial (normal) stress?"
+            },
+            {
+                "qid": "j02a8b90d69a2760361d",
+                "question": "Are the boundary conditions correctly representing the real-world constraints?"
+            },
+            {
+                "qid": "k13b9c27e70b3982172e",
+                "question": "Does the simulation converge within acceptable error limits?"
+            },
+            {
+                "qid": "l24c0d81f81c4103083f",
+                "question": "Are thermal stresses negligible in this analysis?"
+            },
+            {
+                "qid": "m35d1e36a92d5324194a",
+                "question": "Are torsional stresses negligible in this analysis?"
+            },
+            {
+                "qid": "n46e2f9ba03e6545205b",
+                "question": "Does the structure experience any plastic deformation?"
+            },
+            {
+                "qid": "o57f3a01c14f7766316c",
+                "question": "Is the structure symmetrically loaded?"
+            },
+            {
+                "qid": "p68a4b37d25a8987427d",
+                "question": "Is the stress distribution uniform across the structure?"
+            },
+            {
+                "qid": "q79b5c63e36b9108538e",
+                "question": "Is this material ductile?"
+            },
+            {
+                "qid": "r80c6d90f47c0329649f",
+                "question": "Is the Factor of Safety greater than 1?"
+            },
+            {
+                "qid": "s91d7e26a58d1540750a",
+                "question": "Does this part experience rigid body motion?"
+            },
+            {
+                "qid": "t02e8f52b69e2761861b",
+                "question": "Is fatigue analysis negligible in this analysis?"
+            }
+        ],
+        "files": {
+            "File_1": {
+                "answers": {
+                    "a7e94b2c6f1d83052c9e": false,
+                    "b12d8f45e3a670c92178": true,
+                    "c39e5d0af86b2417593c": true,
+                    "d46c2b17e50f38a4271d": true,
+                    "e57f1d63c42a0589b63e": true,
+                    "f68a3b09d15c7246a05f": false,
+                    "g79d4e72b36d9105834a": false,
+                    "h80e6f18a47e0327642b": false,
+                    "i91f7a54c58f1549451c": true,
+                    "j02a8b90d69a2760361d": true,
+                    "k13b9c27e70b3982172e": true,
+                    "l24c0d81f81c4103083f": true,
+                    "m35d1e36a92d5324194a": true,
+                    "n46e2f9ba03e6545205b": false,
+                    "o57f3a01c14f7766316c": false,
+                    "p68a4b37d25a8987427d": false,
+                    "q79b5c63e36b9108538e": true,
+                    "r80c6d90f47c0329649f": true,
+                    "s91d7e26a58d1540750a": false,
+                    "t02e8f52b69e2761861b": false
+                }
+            },
+            "File_2": {
+                "answers": {
+                    "a7e94b2c6f1d83052c9e": false,
+                    "b12d8f45e3a670c92178": true,
+                    "c39e5d0af86b2417593c": true,
+                    "d46c2b17e50f38a4271d": true,
+                    "e57f1d63c42a0589b63e": true,
+                    "f68a3b09d15c7246a05f": false,
+                    "g79d4e72b36d9105834a": false,
+                    "h80e6f18a47e0327642b": true,
+                    "i91f7a54c58f1549451c": false,
+                    "j02a8b90d69a2760361d": true,
+                    "k13b9c27e70b3982172e": true,
+                    "l24c0d81f81c4103083f": true,
+                    "m35d1e36a92d5324194a": true,
+                    "n46e2f9ba03e6545205b": false,
+                    "o57f3a01c14f7766316c": false,
+                    "p68a4b37d25a8987427d": false,
+                    "q79b5c63e36b9108538e": true,
+                    "r80c6d90f47c0329649f": true,
+                    "s91d7e26a58d1540750a": false,
+                    "t02e8f52b69e2761861b": true
+                }
+            },
+            "File_3": {
+                "answers": {
+                    "a7e94b2c6f1d83052c9e": false,
+                    "b12d8f45e3a670c92178": true,
+                    "c39e5d0af86b2417593c": true,
+                    "d46c2b17e50f38a4271d": true,
+                    "e57f1d63c42a0589b63e": false,
+                    "f68a3b09d15c7246a05f": false,
+                    "g79d4e72b36d9105834a": false,
+                    "h80e6f18a47e0327642b": false,
+                    "i91f7a54c58f1549451c": false,
+                    "j02a8b90d69a2760361d": true,
+                    "k13b9c27e70b3982172e": true,
+                    "l24c0d81f81c4103083f": false,
+                    "m35d1e36a92d5324194a": true,
+                    "n46e2f9ba03e6545205b": false,
+                    "o57f3a01c14f7766316c": false,
+                    "p68a4b37d25a8987427d": false,
+                    "q79b5c63e36b9108538e": true,
+                    "r80c6d90f47c0329649f": true,
+                    "s91d7e26a58d1540750a": false,
+                    "t02e8f52b69e2761861b": true
+                }
+            },
+            "File_4": {
+                "answers": {
+                    "a7e94b2c6f1d83052c9e": false,
+                    "b12d8f45e3a670c92178": true,
+                    "c39e5d0af86b2417593c": true,
+                    "d46c2b17e50f38a4271d": true,
+                    "e57f1d63c42a0589b63e": true,
+                    "f68a3b09d15c7246a05f": true,
+                    "g79d4e72b36d9105834a": false,
+                    "h80e6f18a47e0327642b": false,
+                    "i91f7a54c58f1549451c": true,
+                    "j02a8b90d69a2760361d": false,
+                    "k13b9c27e70b3982172e": true,
+                    "l24c0d81f81c4103083f": true,
+                    "m35d1e36a92d5324194a": true,
+                    "n46e2f9ba03e6545205b": false,
+                    "o57f3a01c14f7766316c": true,
+                    "p68a4b37d25a8987427d": false,
+                    "q79b5c63e36b9108538e": true,
+                    "r80c6d90f47c0329649f": true,
+                    "s91d7e26a58d1540750a": false,
+                    "t02e8f52b69e2761861b": true
+                }
+            },
+            "File_5": {
+                "answers": {
+                    "a7e94b2c6f1d83052c9e": true,
+                    "b12d8f45e3a670c92178": false,
+                    "c39e5d0af86b2417593c": true,
+                    "d46c2b17e50f38a4271d": true,
+                    "e57f1d63c42a0589b63e": true,
+                    "f68a3b09d15c7246a05f": false,
+                    "g79d4e72b36d9105834a": false,
+                    "h80e6f18a47e0327642b": false,
+                    "i91f7a54c58f1549451c": false,
+                    "j02a8b90d69a2760361d": true,
+                    "k13b9c27e70b3982172e": true,
+                    "l24c0d81f81c4103083f": true,
+                    "m35d1e36a92d5324194a": true,
+                    "n46e2f9ba03e6545205b": true,
+                    "o57f3a01c14f7766316c": true,
+                    "p68a4b37d25a8987427d": false,
+                    "q79b5c63e36b9108538e": true,
+                    "r80c6d90f47c0329649f": false,
+                    "s91d7e26a58d1540750a": false,
+                    "t02e8f52b69e2761861b": true
+                }
+            },
+            "File_6": {
+                "answers": {
+                    "a7e94b2c6f1d83052c9e": true,
+                    "b12d8f45e3a670c92178": false,
+                    "c39e5d0af86b2417593c": true,
+                    "d46c2b17e50f38a4271d": true,
+                    "e57f1d63c42a0589b63e": false,
+                    "f68a3b09d15c7246a05f": false,
+                    "g79d4e72b36d9105834a": true,
+                    "h80e6f18a47e0327642b": false,
+                    "i91f7a54c58f1549451c": true,
+                    "j02a8b90d69a2760361d": true,
+                    "k13b9c27e70b3982172e": true,
+                    "l24c0d81f81c4103083f": true,
+                    "m35d1e36a92d5324194a": false,
+                    "n46e2f9ba03e6545205b": false,
+                    "o57f3a01c14f7766316c": true,
+                    "p68a4b37d25a8987427d": false,
+                    "q79b5c63e36b9108538e": false,
+                    "r80c6d90f47c0329649f": false,
+                    "s91d7e26a58d1540750a": false,
+                    "t02e8f52b69e2761861b": true
+                }
+            }
+        }
+    },
+    "fluid": {
+        "description": "Questions related to fluid simulation analysis",
+        "questions": [
+            {
+                "qid": "u13f9a63c70f3982972c",
+                "question": "Are recirculation zones or vortices present in the flow field?"
+            },
+            {
+                "qid": "v24a0b19d81a4103783d",
+                "question": "Is the flow fully developed?"
+            },
+            {
+                "qid": "w35b1c65e92b5324894e",
+                "question": "Are wall functions being used?"
+            },
+            {
+                "qid": "x46c2d01f03c6546905f",
+                "question": "Is natural convection significant?"
+            },
+            {
+                "qid": "y57d3e37a14d7767016a",
+                "question": "Is the flow steady-state?"
+            },
+            {
+                "qid": "z68e4f83b25e8988127b",
+                "question": "Are there shock waves present?"
+            },
+            {
+                "qid": "aa9f5a29c36f9109238c",
+                "question": "Is the flow multiphase?"
+            },
+            {
+                "qid": "bb0a6b65d47a0320349d",
+                "question": "Is the flow regime laminar?"
+            },
+            {
+                "qid": "cc1b7c01e58b1541450e",
+                "question": "Is mass conservation satisfied?"
+            },
+            {
+                "qid": "dd2c8d37f69c2762561f",
+                "question": "Is the flow supersonic anywhere?"
+            },
+            {
+                "qid": "ee3d9e73a70d3983672a",
+                "question": "Is the flow regime turbulent?"
+            },
+            {
+                "qid": "ff4e0f19b81e4104783b",
+                "question": "Is the analysis set up as a transient simulation?"
+            },
+            {
+                "qid": "gg5f1a65c92f5325894c",
+                "question": "Is the fluid considered compressible in the simulation?"
+            },
+            {
+                "qid": "hh6a2b01d03a6546905d",
+                "question": "Is there evidence of flow separation in the results?"
+            },
+            {
+                "qid": "ii7b3c37e14b7767016e",
+                "question": "Is buoyancy negligible in this flow scenario?"
+            },
+            {
+                "qid": "jj8c4d83f25c8988127f",
+                "question": "Is the flow symmetric about any axis?"
+            },
+            {
+                "qid": "kk9d5e29a36d9109238a",
+                "question": "Are there any regions of high-pressure gradients?"
+            },
+            {
+                "qid": "ll0e6f65b47e0320349b",
+                "question": "Are thermal effects negligible in this analysis?"
+            },
+            {
+                "qid": "mm1f7a01c58f1541450c",
+                "question": "Are there any areas of cavitation?"
+            },
+            {
+                "qid": "nn2a8b37d69a2762561d",
+                "question": "Does the simulation include fluid-structure interaction?"
+            }
+        ],
+        "files": {
+            "File_7": {
+                "answers": {
+                    "u13f9a63c70f3982972c": false,
+                    "v24a0b19d81a4103783d": true,
+                    "w35b1c65e92b5324894e": false,
+                    "x46c2d01f03c6546905f": false,
+                    "y57d3e37a14d7767016a": true,
+                    "z68e4f83b25e8988127b": false,
+                    "aa9f5a29c36f9109238c": false,
+                    "bb0a6b65d47a0320349d": true,
+                    "cc1b7c01e58b1541450e": true,
+                    "dd2c8d37f69c2762561f": false,
+                    "ee3d9e73a70d3983672a": false,
+                    "ff4e0f19b81e4104783b": false,
+                    "gg5f1a65c92f5325894c": true,
+                    "hh6a2b01d03a6546905d": false,
+                    "ii7b3c37e14b7767016e": true,
+                    "jj8c4d83f25c8988127f": true,
+                    "kk9d5e29a36d9109238a": true,
+                    "ll0e6f65b47e0320349b": true,
+                    "mm1f7a01c58f1541450c": false,
+                    "nn2a8b37d69a2762561d": true
+                }
+            },
+            "File_8": {
+                "answers": {
+                    "u13f9a63c70f3982972c": false,
+                    "v24a0b19d81a4103783d": false,
+                    "w35b1c65e92b5324894e": true,
+                    "x46c2d01f03c6546905f": false,
+                    "y57d3e37a14d7767016a": true,
+                    "z68e4f83b25e8988127b": false,
+                    "aa9f5a29c36f9109238c": false,
+                    "bb0a6b65d47a0320349d": true,
+                    "cc1b7c01e58b1541450e": true,
+                    "dd2c8d37f69c2762561f": false,
+                    "ee3d9e73a70d3983672a": false,
+                    "ff4e0f19b81e4104783b": false,
+                    "gg5f1a65c92f5325894c": false,
+                    "hh6a2b01d03a6546905d": true,
+                    "ii7b3c37e14b7767016e": false,
+                    "jj8c4d83f25c8988127f": true,
+                    "kk9d5e29a36d9109238a": true,
+                    "ll0e6f65b47e0320349b": true,
+                    "mm1f7a01c58f1541450c": false,
+                    "nn2a8b37d69a2762561d": true
+                }
+            },
+            "File_9": {
+                "answers": {
+                    "u13f9a63c70f3982972c": true,
+                    "v24a0b19d81a4103783d": false,
+                    "w35b1c65e92b5324894e": true,
+                    "x46c2d01f03c6546905f": true,
+                    "y57d3e37a14d7767016a": false,
+                    "z68e4f83b25e8988127b": false,
+                    "aa9f5a29c36f9109238c": false,
+                    "bb0a6b65d47a0320349d": false,
+                    "cc1b7c01e58b1541450e": true,
+                    "dd2c8d37f69c2762561f": true,
+                    "ee3d9e73a70d3983672a": true,
+                    "ff4e0f19b81e4104783b": false,
+                    "gg5f1a65c92f5325894c": true,
+                    "hh6a2b01d03a6546905d": true,
+                    "ii7b3c37e14b7767016e": false,
+                    "jj8c4d83f25c8988127f": true,
+                    "kk9d5e29a36d9109238a": false,
+                    "ll0e6f65b47e0320349b": false,
+                    "mm1f7a01c58f1541450c": false,
+                    "nn2a8b37d69a2762561d": true
+                }
+            },
+            "File_10": {
+                "answers": {
+                    "u13f9a63c70f3982972c": true,
+                    "v24a0b19d81a4103783d": false,
+                    "w35b1c65e92b5324894e": true,
+                    "x46c2d01f03c6546905f": false,
+                    "y57d3e37a14d7767016a": false,
+                    "z68e4f83b25e8988127b": false,
+                    "aa9f5a29c36f9109238c": false,
+                    "bb0a6b65d47a0320349d": false,
+                    "cc1b7c01e58b1541450e": true,
+                    "dd2c8d37f69c2762561f": false,
+                    "ee3d9e73a70d3983672a": true,
+                    "ff4e0f19b81e4104783b": false,
+                    "gg5f1a65c92f5325894c": true,
+                    "hh6a2b01d03a6546905d": true,
+                    "ii7b3c37e14b7767016e": true,
+                    "jj8c4d83f25c8988127f": false,
+                    "kk9d5e29a36d9109238a": true,
+                    "ll0e6f65b47e0320349b": true,
+                    "mm1f7a01c58f1541450c": false,
+                    "nn2a8b37d69a2762561d": true
+                }
+            },
+            "File_11": {
+                "answers": {
+                    "u13f9a63c70f3982972c": false,
+                    "v24a0b19d81a4103783d": true,
+                    "w35b1c65e92b5324894e": true,
+                    "x46c2d01f03c6546905f": true,
+                    "y57d3e37a14d7767016a": true,
+                    "z68e4f83b25e8988127b": false,
+                    "aa9f5a29c36f9109238c": false,
+                    "bb0a6b65d47a0320349d": true,
+                    "cc1b7c01e58b1541450e": true,
+                    "dd2c8d37f69c2762561f": false,
+                    "ee3d9e73a70d3983672a": false,
+                    "ff4e0f19b81e4104783b": false,
+                    "gg5f1a65c92f5325894c": false,
+                    "hh6a2b01d03a6546905d": true,
+                    "ii7b3c37e14b7767016e": false,
+                    "jj8c4d83f25c8988127f": false,
+                    "kk9d5e29a36d9109238a": true,
+                    "ll0e6f65b47e0320349b": false,
+                    "mm1f7a01c58f1541450c": false,
+                    "nn2a8b37d69a2762561d": true
+                }
+            },
+            "File_12": {
+                "answers": {
+                    "u13f9a63c70f3982972c": true,
+                    "v24a0b19d81a4103783d": false,
+                    "w35b1c65e92b5324894e": true,
+                    "x46c2d01f03c6546905f": false,
+                    "y57d3e37a14d7767016a": true,
+                    "z68e4f83b25e8988127b": false,
+                    "aa9f5a29c36f9109238c": true,
+                    "bb0a6b65d47a0320349d": false,
+                    "cc1b7c01e58b1541450e": true,
+                    "dd2c8d37f69c2762561f": false,
+                    "ee3d9e73a70d3983672a": true,
+                    "ff4e0f19b81e4104783b": false,
+                    "gg5f1a65c92f5325894c": true,
+                    "hh6a2b01d03a6546905d": true,
+                    "ii7b3c37e14b7767016e": false,
+                    "jj8c4d83f25c8988127f": false,
+                    "kk9d5e29a36d9109238a": true,
+                    "ll0e6f65b47e0320349b": true,
+                    "mm1f7a01c58f1541450c": true,
+                    "nn2a8b37d69a2762561d": true
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,146 @@
+
+
+
+Image file not found
+
+Ansys Fluent Simulation Report
+
+
+Analyst	''''
+Date	2/26/2025 11:04 PM
+
+Table of Contents
+1 System Information
+2 Geometry and Mesh
+2.1 Mesh Size
+2.2 Mesh Quality
+2.3 Orthogonal Quality
+3 Simulation Setup
+3.1 Physics
+3.1.1 Models
+3.1.2 Material Properties
+3.1.3 Cell Zone Conditions
+3.1.4 Boundary Conditions
+3.1.5 Reference Values
+3.2 Solver Settings
+4 Run Information
+5 Solution Status
+6 Report Definitions
+7 Plots
+8 Contours
+9 XY Plots
+
+System Information
+
+Application	Fluent
+Settings	2d, double precision, pressure-based, SST k-omega
+Version	25.1.0-10210
+Source Revision	3b709034ad
+Build Time	Nov 26 2024 13:21:42 EST
+CPU	13th Gen Intel(R) Core(TM) i7-13700H
+OS	Windows
+
+Geometry and Mesh
+
+Mesh Size
+
+Cells	Faces	Nodes
+113489	227727	114238
+
+Mesh Quality
+
+Name	Type	Min Orthogonal Quality	Max Aspect Ratio
+surface_body	Mixed Cell	0.0024555109	9115.1257
+
+Orthogonal Quality
+Image file not found
+
+Simulation Setup
+
+Physics
+
+Models
+
+Model	Settings
+Space	2D
+Time	Steady
+Viscous	SST k-omega turbulence model
+Heat Transfer	Enabled
+
+Material Properties
+Fluid	
+Solid	
+
+Cell Zone Conditions
+Fluid	
+
+Boundary Conditions
+Inlet	
+Outlet	
+Wall	
+
+Reference Values
+
+Area	1 m^2
+Density	1.176655 kg/m^3
+Depth	1 m
+Enthalpy	40413.11 J/kg
+Length	1 m
+Pressure	0 Pa
+Temperature	300 K
+Velocity	277.6732 m/s
+Viscosity	1.84618e-05 kg/(m s)
+Ratio of Specific Heats	1.4
+Yplus for Heat Tran. Coef.	300
+Reference Zone	surface_body
+
+Solver Settings
+Equations	
+Numerics	
+Pseudo Time Explicit Relaxation Factors	
+Pressure-Velocity Coupling	
+Discretization Scheme	
+Solution Limits	
+
+Run Information
+
+Number of Machines	1
+Number of Cores	1
+Case Read	22.388 seconds
+Data Read	0.525 seconds
+Virtual Current Memory	0.840462 GB
+Virtual Peak Memory	0.853683 GB
+Memory Per M Cell	1.90891
+
+Solution Status
+
+
+Iterations: 10
+
+Value	Absolute Criteria	Convergence Status
+continuity	0.0003353667	1e-07	Not Converged
+x-velocity	1.468811e-11	1e-07	Converged
+y-velocity	5.194535e-11	1e-07	Converged
+energy	6.587789e-12	1e-06	Converged
+k	1.933765e-07	1e-07	Not Converged
+omega	1.666548e-06	1e-07	Not Converged
+
+Report Definitions
+cl	-0.01423147	
+cd	0.01699904	
+
+Plots
+Residuals
+
+Residuals
+
+Contours
+contour-1
+
+contour-1
+Image file not found
+
+XY Plots
+xy-plot-1
+
+xy-plot-1

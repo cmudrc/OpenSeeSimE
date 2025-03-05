@@ -1,0 +1,933 @@
+Mechanical_Report_Files/Logo.png 
+
+Project*
+First Saved Monday, October 25, 2021 
+Last Saved Monday, February 24, 2025 
+Product Version 2025 R1 
+Save Project Before Solution No 
+Save Project After Solution No 
+
+Mechanical_Report_Files/Figure0001.png
+
+Contents
+Units
+Model
+Geometry Imports
+Geometry Import
+Geometry
+Parts
+Point Mass
+Materials
+Coordinate Systems
+Symmetry
+Symmetry Region
+Connections
+Contacts
+Contact Region
+Circular - Center Chassis\Solid111 To Component1\Solid
+Mesh
+MultiZone
+Static Structural
+Analysis Settings
+Standard Earth Gravity
+Force
+Solution
+Solution Information
+Results
+Force Reaction
+Material Data
+Aluminum Alloy
+Structural Steel
+Units
+TABLE 1
+
+Unit System Metric (m, kg, N, s, V, A) Degrees rad/s Celsius 
+Angle Degrees 
+Rotational Velocity rad/s 
+Temperature Celsius 
+
+Model
+TABLE 2
+Model > Geometry Imports
+
+Object Name Geometry Imports 
+State Solved 
+
+TABLE 3
+Model > Geometry Imports > Geometry Import
+
+Object Name Geometry Import 
+State Solved 
+Definition 
+Source ''''\dp0\SYS\DM\SYS.scdoc 
+Type SpaceClaim 
+Basic Geometry Options 
+Parameters Independent 
+Parameter Key  
+Advanced Geometry Options 
+Compare Parts On Update No 
+Analysis Type 3-D 
+
+Geometry
+TABLE 4
+Model > Geometry
+
+Object Name Geometry 
+State Fully Defined 
+Definition 
+Source ''''\dp0\SYS\DM\SYS.scdoc 
+Type SpaceClaim 
+Length Unit Meters 
+Element Control Program Controlled 
+Display Style Body Color 
+Bounding Box 
+Length X 0.19094 m 
+Length Y 1.e-002 m 
+Length Z 0.18897 m 
+Properties 
+Volume 2.1916e-005 m³ 
+Mass 0.31071 kg 
+Scale Factor Value 1. 
+Statistics 
+Bodies 2 
+Active Bodies 2 
+Nodes 33461 
+Elements 6154 
+Mesh Metric None 
+Update Options 
+Assign Default Material No 
+Basic Geometry Options 
+Solid Bodies Yes 
+Surface Bodies Yes 
+Line Bodies Yes 
+Parameters Independent 
+Parameter Key  
+Attributes Yes 
+Attribute Key  
+Named Selections Yes 
+Named Selection Key  
+Material Properties Yes 
+Advanced Geometry Options 
+Use Associativity Yes 
+Coordinate Systems Yes 
+Coordinate System Key  
+Reader Mode Saves Updated File No 
+Use Instances Yes 
+Smart CAD Update Yes 
+Compare Parts On Update No 
+Analysis Type 3-D 
+Mixed Import Resolution None 
+Import Facet Quality Source 
+Clean Bodies On Import No 
+Stitch Surfaces On Import None 
+Decompose Disjoint Geometry Yes 
+Enclosure and Symmetry Processing Yes 
+
+TABLE 5
+Model > Geometry > Parts
+
+Object Name Center Chassis\Solid111 Component1\Solid 
+State Meshed 
+Graphics Properties 
+Visible Yes 
+Transparency 1 
+Definition 
+Suppressed No 
+Stiffness Behavior Flexible 
+Coordinate System Default Coordinate System 
+Reference Temperature By Environment 
+Treatment None 
+Material 
+Assignment Aluminum Alloy 
+Nonlinear Effects Yes 
+Thermal Strain Effects Yes 
+Bounding Box 
+Length X 7.4969e-002 m 0.15596 m 
+Length Y 2.e-003 m 8.e-003 m 
+Length Z 7.4964e-002 m 0.15466 m 
+Properties 
+Volume 9.4142e-006 m³ 1.2502e-005 m³ 
+Mass 2.6077e-002 kg 3.463e-002 kg 
+Centroid X 3.7567e-002 m 0.10275 m 
+Centroid Y -2.2232e-009 m -5.e-003 m 
+Centroid Z 3.6597e-002 m 0.10153 m 
+Moment of Inertia Ip1 9.6785e-006 kg·m² 8.6115e-007 kg·m² 
+Moment of Inertia Ip2 2.0953e-005 kg·m² 1.45e-004 kg·m² 
+Moment of Inertia Ip3 1.1292e-005 kg·m² 1.4428e-004 kg·m² 
+Statistics 
+Nodes 14188 19273 
+Elements 2470 3684 
+Mesh Metric None 
+CAD Attributes 
+PartTolerance: 0.00000001 
+Color:143.175.143  
+
+TABLE 6
+Model > Geometry > Masses
+
+Object Name Point Mass 
+State Fully Defined 
+Scope 
+Scoping Method Geometry Selection 
+Applied By Remote Attachment 
+Geometry 1 Face 
+Coordinate System Global Coordinate System 
+X Coordinate 1.9969e-002 m 
+Y Coordinate 1.e-002 m 
+Z Coordinate 1.9964e-002 m 
+Location Defined 
+Definition 
+Mass 0.25 kg 
+Mass Moment of Inertia X 0. kg·m² 
+Mass Moment of Inertia Y 0. kg·m² 
+Mass Moment of Inertia Z 0. kg·m² 
+Behavior Deformable 
+Pinball Region All 
+Element APDL Name  
+Suppressed No 
+
+TABLE 7
+Model > Materials
+
+Object Name Materials 
+State Fully Defined 
+Statistics 
+Materials 2 
+Material Assignments 0 
+
+Coordinate Systems
+TABLE 8
+Model > Coordinate Systems > Coordinate System
+
+Object Name Global Coordinate System 
+State Fully Defined 
+Definition 
+Type Cartesian 
+Coordinate System ID 0.  
+Origin 
+Origin X 0. m 
+Origin Y 0. m 
+Origin Z 0. m 
+Directional Vectors 
+X Axis Data [ 1. 0. 0. ] 
+Y Axis Data [ 0. 1. 0. ] 
+Z Axis Data [ 0. 0. 1. ] 
+Transfer Properties 
+Source  
+Read Only No 
+
+Symmetry
+TABLE 9
+Model > Symmetry
+
+Object Name Symmetry 
+State Fully Defined 
+
+TABLE 10
+Model > Symmetry > Symmetry Region
+
+Object Name Symmetry Region Symmetry Region 2 
+State Fully Defined 
+Scope 
+Scoping Method Geometry Selection 
+Geometry 1 Face 
+Definition 
+Scope Mode Manual 
+Type Symmetric 
+Coordinate System Global Coordinate System 
+Symmetry Normal Z Axis X Axis 
+Suppressed No 
+
+Connections
+TABLE 11
+Model > Connections
+
+Object Name Connections 
+State Fully Defined 
+Auto Detection 
+Generate Automatic Connection On Refresh Yes 
+Transparency 
+Enabled Yes 
+Statistics 
+Contacts 1 
+Active Contacts 1 
+Joints 0 
+Active Joints 0 
+Beams 1 
+Active Beams 1 
+Bearings 0 
+Active Bearings 0 
+Springs 0 
+Active Springs 0 
+Body Interactions 0 
+Active Body Interactions 0 
+
+TABLE 12
+Model > Connections > Contacts
+
+Object Name Contacts 
+State Fully Defined 
+Definition 
+Connection Type Contact 
+Scope 
+Scoping Method Geometry Selection 
+Geometry All Bodies 
+Auto Detection 
+Tolerance Type Slider 
+Tolerance Slider 0. 
+Tolerance Value 6.7208e-004 m 
+Use Range No 
+Face/Face Yes 
+Face-Face Angle Tolerance 75. ° 
+Face Overlap Tolerance Off 
+Cylindrical Faces Include 
+Face/Edge No 
+Edge/Edge No 
+Priority Include All 
+Group By Bodies 
+Search Across Bodies 
+Statistics 
+Connections 1 
+Active Connections 1 
+
+TABLE 13
+Model > Connections > Contacts > Contact Regions
+
+Object Name Contact Region 
+State Fully Defined 
+Scope 
+Scoping Method Geometry Selection 
+Contact 1 Face 
+Target 1 Face 
+Contact Bodies Center Chassis\Solid111 
+Target Bodies Component1\Solid 
+Protected No 
+Definition 
+Type Bonded 
+Scope Mode Automatic 
+Behavior Program Controlled 
+Trim Contact Program Controlled 
+Trim Tolerance 6.7208e-004 m 
+Contact APDL Name  
+Target APDL Name  
+Suppressed No 
+Display 
+Element Normals No 
+Advanced 
+Formulation Program Controlled 
+Small Sliding Program Controlled 
+Detection Method Program Controlled 
+Penetration Tolerance Program Controlled 
+Elastic Slip Tolerance Program Controlled 
+Normal Stiffness Program Controlled 
+Update Stiffness Program Controlled 
+Pinball Region Program Controlled 
+Geometric Modification 
+Contact Geometry Correction None 
+Target Geometry Correction None 
+
+TABLE 14
+Model > Connections > Circular - Center Chassis\Solid111 To Component1\Solid
+
+Object Name Circular - Center Chassis\Solid111 To Component1\Solid 
+State Fully Defined 
+Graphics Properties 
+Visible Yes 
+Definition 
+Material Structural Steel 
+Cross Section Circular 
+Radius 2.e-003 m 
+Suppressed No 
+Beam Length 5.e-003 m 
+Element APDL Name  
+Scope 
+Scope Body-Body 
+Reference 
+Scoping Method Geometry Selection 
+Applied By Remote Attachment 
+Scope 1 Face 
+Body Center Chassis\Solid111 
+Coordinate System Global Coordinate System 
+Reference X Coordinate 4.7388e-002 m 
+Reference Y Coordinate 2.1607e-010 m 
+Reference Z Coordinate 4.6673e-002 m 
+Reference Location Defined 
+Behavior Rigid 
+Pinball Region All 
+Mobile 
+Scoping Method Geometry Selection 
+Applied By Remote Attachment 
+Scope 1 Face 
+Body Component1\Solid 
+Coordinate System Global Coordinate System 
+Mobile X Coordinate 4.7388e-002 m 
+Mobile Y Coordinate -5.e-003 m 
+Mobile Z Coordinate 4.6673e-002 m 
+Mobile Location Defined 
+Behavior Rigid 
+Pinball Region All 
+
+Mesh
+TABLE 15
+Model > Mesh
+
+Object Name Mesh 
+State Solved 
+Display 
+Display Style Use Geometry Setting 
+Defaults 
+Physics Preference Mechanical 
+Element Order Program Controlled 
+Element Size 2.e-003 m 
+Sizing 
+Use Adaptive Sizing Yes 
+Resolution Default (2) 
+Mesh Defeaturing Yes 
+Defeature Size Default 
+Transition Fast 
+Span Angle Center Coarse 
+Initial Size Seed Assembly 
+Bounding Box Diagonal 0.26883 m 
+Average Surface Area 7.4496e-004 m² 
+Minimum Edge Length 2.e-003 m 
+Quality 
+Check Mesh Quality Yes, Errors 
+Error Limits Aggressive Mechanical 
+Target Element Quality Default (5.e-002) 
+Smoothing Medium 
+Mesh Metric None 
+Inflation 
+Use Automatic Inflation None 
+Inflation Option Smooth Transition 
+Transition Ratio 0.272 
+Maximum Layers 5 
+Growth Rate 1.2 
+Inflation Algorithm Pre 
+Inflation Element Type Wedges 
+View Advanced Options No 
+Advanced 
+Number of CPUs for Parallel Part Meshing Program Controlled 
+Straight Sided Elements No 
+Rigid Body Behavior Dimensionally Reduced 
+Triangle Surface Mesher Program Controlled 
+Topology Checking Yes 
+Pinch Tolerance Please Define 
+Generate Pinch on Refresh No 
+Automatic Methods 
+Sheet Body Method Quad Dominant 
+Sweepable Body Method Sweep 
+Statistics 
+Nodes 33461 
+Elements 6154 
+Show Detailed Statistics No 
+
+TABLE 16
+Model > Mesh > Mesh Controls
+
+Object Name MultiZone 
+State Fully Defined 
+Scope 
+Scoping Method Geometry Selection 
+Geometry 1 Body 
+Definition 
+Suppressed No 
+Method MultiZone 
+Decomposition Type Program Controlled 
+Mapped/Swept Type Hexa 
+Surface Mesh Method Program Controlled 
+Free Mesh Type Not Allowed 
+Element Order Use Global Setting 
+Src/Trg Selection Automatic 
+Src/Trg Scoping Method Program Controlled 
+Source(s) and Target(s) Program Controlled 
+Sweep Size Behavior Sweep Element Size 
+Sweep Element Size Default 
+Element Option Solid 
+Advanced 
+Preserve Boundaries Protected 
+Mesh Based Defeaturing Off 
+Minimum Edge Length 3.e-003 m 
+Write ICEM CFD Files No 
+Use Split Angle No 
+
+Static Structural
+TABLE 17
+Model > Analysis
+
+Object Name Static Structural 
+State Solved 
+Definition 
+Physics Type Structural 
+Analysis Type Static Structural 
+Solver Target Mechanical APDL 
+Options 
+Environment Temperature 22. °C 
+Generate Input Only No 
+
+TABLE 18
+Model > Static Structural > Analysis Settings
+
+Object Name Analysis Settings 
+State Fully Defined 
+Step Controls 
+Number Of Steps 1. 
+Current Step Number 1. 
+Step End Time 1. s 
+Auto Time Stepping Program Controlled 
+Solver Controls 
+Solver Type Program Controlled 
+Weak Springs On 
+Spring Stiffness Program Controlled 
+Solver Pivot Checking Program Controlled 
+Large Deflection Off 
+Inertia Relief Off 
+Quasi-Static Solution Off 
+Rotordynamics Controls 
+Coriolis Effect Off 
+Restart Controls 
+Generate Restart Points Program Controlled 
+Retain Files After Full Solve No 
+Combine Restart Files Program Controlled 
+Nonlinear Controls 
+Newton-Raphson Option Program Controlled 
+Force Convergence Program Controlled 
+Moment Convergence Program Controlled 
+Displacement Convergence Program Controlled 
+Rotation Convergence Program Controlled 
+Line Search Program Controlled 
+Stabilization Program Controlled 
+Advanced 
+Inverse Option No 
+Contact Split (DMP) Off 
+Output Controls 
+Output Selection None 
+Stress Yes 
+Back Stress No 
+Strain Yes 
+Contact Data Yes 
+Nonlinear Data No 
+Nodal Forces No 
+Volume and Energy Yes 
+Euler Angles Yes 
+General Miscellaneous No 
+Contact Miscellaneous No 
+Store Results At All Time Points 
+Result File Compression Program Controlled 
+Analysis Data Management 
+Solver Files Directory ''''\StaticStructural\ 
+Future Analysis None 
+Scratch Solver Files Directory  
+Save MAPDL db No 
+Contact Summary Program Controlled 
+Delete Unneeded Files Yes 
+Nonlinear Solution No 
+Solver Units Active System 
+Solver Unit System mks 
+
+TABLE 19
+Model > Static Structural > Accelerations
+
+Object Name Standard Earth Gravity 
+State Fully Defined 
+Scope 
+Geometry All Bodies 
+Definition 
+Coordinate System Global Coordinate System 
+X Component 0. m/s² (ramped) 
+Y Component 9.8066 m/s² (ramped) 
+Z Component 0. m/s² (ramped) 
+Suppressed No 
+Direction +Y Direction 
+
+FIGURE 1
+Model > Static Structural > Standard Earth Gravity
+
+Mechanical_Report_Files/Figure0002.png
+
+TABLE 20
+Model > Static Structural > Loads
+
+Object Name Force 
+State Fully Defined 
+Scope 
+Scoping Method Geometry Selection 
+Geometry 2 Faces 
+Definition 
+Type Force 
+Define By Vector 
+Applied By Surface Effect 
+Magnitude 3.0469 N (ramped) 
+Direction Defined 
+Suppressed No 
+
+FIGURE 2
+Model > Static Structural > Force
+
+Mechanical_Report_Files/Figure0003.png
+
+Solution
+TABLE 21
+Model > Static Structural > Solution
+
+Object Name Solution 
+State Solved 
+Adaptive Mesh Refinement 
+Max Refinement Loops 1. 
+Refinement Depth 2. 
+Information 
+Status Done 
+MAPDL Elapsed Time 7. s 
+MAPDL Memory Used 900. MB 
+MAPDL Result File Size 8.5 MB 
+Post Processing 
+Beam Section Results No 
+On Demand Stress/Strain No 
+
+TABLE 22
+Model > Static Structural > Solution > Solution Information
+
+Object Name Solution Information 
+State Solved 
+Solution Information 
+Solution Output Solver Output 
+Newton-Raphson Residuals 0 
+Identify Element Violations 0 
+Update Interval 2.5 s 
+Display Points All 
+FE Connection Visibility 
+Activate Visibility Yes 
+Display All FE Connectors 
+Draw Connections Attached To All Nodes 
+Line Color Connection Type 
+Visible on Results No 
+Line Thickness Single 
+Display Type Lines 
+
+TABLE 23
+Model > Static Structural > Solution > Results
+
+Object Name Total Deformation Directional Deformation Equivalent Stress Vector Principal Stress 
+State Solved 
+Scope 
+Scoping Method Geometry Selection 
+Geometry All Bodies 1 Body 
+Definition 
+Type Total Deformation Directional Deformation Equivalent (von-Mises) Stress Vector Principal Stress 
+By Time 
+Display Time Last 
+Separate Data by Entity No   
+Calculate Time History Yes 
+Identifier  
+Suppressed No 
+Orientation   Y Axis   
+Coordinate System   Global Coordinate System   
+Results 
+Minimum 1.292e-004 m 1.2914e-004 m 930.52 Pa   
+Maximum 3.7948e-003 m 2.987e+007 Pa   
+Average 2.7219e-003 m 2.7214e-003 m 4.8718e+006 Pa   
+Minimum Occurs On Component1\Solid   
+Maximum Occurs On Center Chassis\Solid111   
+Information 
+Time 1. s 
+Load Step 1 
+Substep 1 
+Iteration Number 1 
+Integration Point Results 
+Display Option   Averaged 
+Average Across Bodies   No 
+
+FIGURE 3
+Model > Static Structural > Solution > Total Deformation
+
+Mechanical_Report_Files/Figure0004.png
+
+TABLE 24
+Model > Static Structural > Solution > Total Deformation
+
+Time [s] Minimum [m] Maximum [m] Average [m] 
+1. 1.292e-004 3.7948e-003 2.7219e-003 
+
+FIGURE 4
+Model > Static Structural > Solution > Directional Deformation
+
+Mechanical_Report_Files/Figure0005.png
+
+TABLE 25
+Model > Static Structural > Solution > Directional Deformation
+
+Time [s] Minimum [m] Maximum [m] Average [m] 
+1. 1.2914e-004 3.7948e-003 2.7214e-003 
+
+FIGURE 5
+Model > Static Structural > Solution > Equivalent Stress
+
+Mechanical_Report_Files/Figure0006.png
+
+TABLE 26
+Model > Static Structural > Solution > Equivalent Stress
+
+Time [s] Minimum [Pa] Maximum [Pa] Average [Pa] 
+1. 930.52 2.987e+007 4.8718e+006 
+
+FIGURE 6
+Model > Static Structural > Solution > Vector Principal Stress
+
+Mechanical_Report_Files/Figure0007.png
+
+TABLE 27
+Model > Static Structural > Solution > Vector Principal Stress
+
+Time [s] Minimum [S1] [Pa] Minimum [S2] [Pa] Minimum [S3] [Pa] Maximum [S1] [Pa] Maximum [S2] [Pa] Maximum [S3] [Pa] 
+1. -1.439e+007 -2.2463e+007 -1.4226e+007 1.4422e+007 4.3634e+006 1.4258e+007 
+
+TABLE 28
+Model > Static Structural > Solution > Probes
+
+Object Name Force Reaction 
+State Solved 
+Definition 
+Type Force Reaction 
+Location Method Boundary Condition 
+Boundary Condition Weak Springs 
+Orientation Global Coordinate System 
+Suppressed No 
+Options 
+Result Selection All 
+Display Time End Time 
+Results 
+X Axis 2.4023e-005 N 
+Y Axis -4.9566e-003 N 
+Z Axis 2.2533e-005 N 
+Total 4.9567e-003 N 
+Maximum Value Over Time 
+X Axis 2.4023e-005 N 
+Y Axis -4.9566e-003 N 
+Z Axis 2.2533e-005 N 
+Total 4.9567e-003 N 
+Minimum Value Over Time 
+X Axis 2.4023e-005 N 
+Y Axis -4.9566e-003 N 
+Z Axis 2.2533e-005 N 
+Total 4.9567e-003 N 
+Information 
+Time 1. s 
+Load Step 1 
+Substep 1 
+Iteration Number 1 
+
+FIGURE 7
+Model > Static Structural > Solution > Force Reaction
+
+Mechanical_Report_Files/Figure0008.png
+
+TABLE 29
+Model > Static Structural > Solution > Force Reaction
+
+Time [s] Force Reaction (X) [N] Force Reaction (Y) [N] Force Reaction (Z) [N] Force Reaction (Total) [N] 
+1. 2.4023e-005 -4.9566e-003 2.2533e-005 4.9567e-003 
+
+Material Data 
+Aluminum Alloy
+TABLE 30
+Aluminum Alloy > Constants
+
+
+Density 2770 kg m^-3 
+Coefficient of Thermal Expansion 2.3e-005 C^-1 
+Specific Heat 875 J kg^-1 C^-1 
+
+TABLE 31
+Aluminum Alloy > Color
+
+
+Red  Green  Blue  
+138 104 46 
+
+TABLE 32
+Aluminum Alloy > Compressive Ultimate Strength
+
+
+Compressive Ultimate Strength Pa 
+0 
+
+TABLE 33
+Aluminum Alloy > Compressive Yield Strength
+
+
+Compressive Yield Strength Pa 
+2.8e+008 
+
+TABLE 34
+Aluminum Alloy > Tensile Yield Strength
+
+
+Tensile Yield Strength Pa 
+2.8e+008 
+
+TABLE 35
+Aluminum Alloy > Tensile Ultimate Strength
+
+
+Tensile Ultimate Strength Pa 
+3.1e+008 
+
+TABLE 36
+Aluminum Alloy > Isotropic Secant Coefficient of Thermal Expansion
+
+
+Zero-Thermal-Strain Reference Temperature C 
+22 
+
+TABLE 37
+Aluminum Alloy > Isotropic Thermal Conductivity
+
+
+Thermal Conductivity W m^-1 C^-1 Temperature C 
+114 -100 
+144 0 
+165 100 
+175 200 
+
+TABLE 38
+Aluminum Alloy > S-N Curve
+
+
+Alternating Stress Pa Cycles  R-Ratio  
+2.758e+008 1700 -1 
+2.413e+008 5000 -1 
+2.068e+008 34000 -1 
+1.724e+008 1.4e+005 -1 
+1.379e+008 8.e+005 -1 
+1.172e+008 2.4e+006 -1 
+8.963e+007 5.5e+007 -1 
+8.274e+007 1.e+008 -1 
+1.706e+008 50000 -0.5 
+1.396e+008 3.5e+005 -0.5 
+1.086e+008 3.7e+006 -0.5 
+8.791e+007 1.4e+007 -0.5 
+7.757e+007 5.e+007 -0.5 
+7.239e+007 1.e+008 -0.5 
+1.448e+008 50000 0 
+1.207e+008 1.9e+005 0 
+1.034e+008 1.3e+006 0 
+9.308e+007 4.4e+006 0 
+8.618e+007 1.2e+007 0 
+7.239e+007 1.e+008 0 
+7.412e+007 3.e+005 0.5 
+7.067e+007 1.5e+006 0.5 
+6.636e+007 1.2e+007 0.5 
+6.205e+007 1.e+008 0.5 
+
+TABLE 39
+Aluminum Alloy > Isotropic Resistivity
+
+
+Resistivity kg m^3 A^-2 s^-3 Temperature C 
+2.43e-008 0 
+2.67e-008 20 
+3.63e-008 100 
+
+TABLE 40
+Aluminum Alloy > Isotropic Elasticity
+
+
+Young's Modulus Pa Poisson's Ratio  Bulk Modulus Pa Shear Modulus Pa Temperature C 
+7.1e+010 0.33 6.9608e+010 2.6692e+010  
+
+TABLE 41
+Aluminum Alloy > Isotropic Relative Permeability
+
+
+Relative Permeability  
+1 
+
+Structural Steel
+TABLE 42
+Structural Steel > Constants
+
+
+Density 7850 kg m^-3 
+Coefficient of Thermal Expansion 1.2e-005 C^-1 
+Specific Heat 434 J kg^-1 C^-1 
+Thermal Conductivity 60.5 W m^-1 C^-1 
+Resistivity 1.7e-007 kg m^3 A^-2 s^-3 
+
+TABLE 43
+Structural Steel > Color
+
+
+Red  Green  Blue  
+132 139 179 
+
+TABLE 44
+Structural Steel > Compressive Ultimate Strength
+
+
+Compressive Ultimate Strength Pa 
+0 
+
+TABLE 45
+Structural Steel > Compressive Yield Strength
+
+
+Compressive Yield Strength Pa 
+2.5e+008 
+
+TABLE 46
+Structural Steel > Tensile Yield Strength
+
+
+Tensile Yield Strength Pa 
+2.5e+008 
+
+TABLE 47
+Structural Steel > Tensile Ultimate Strength
+
+
+Tensile Ultimate Strength Pa 
+4.6e+008 
+
+TABLE 48
+Structural Steel > Isotropic Secant Coefficient of Thermal Expansion
+
+
+Zero-Thermal-Strain Reference Temperature C 
+22 
+
+TABLE 49
+Structural Steel > S-N Curve
+
+
+Alternating Stress Pa Cycles  Mean Stress Pa 
+3.999e+009 10 0 
+2.827e+009 20 0 
+1.896e+009 50 0 
+1.413e+009 100 0 
+1.069e+009 200 0 
+4.41e+008 2000 0 
+2.62e+008 10000 0 
+2.14e+008 20000 0 
+1.38e+008 1.e+005 0 
+1.14e+008 2.e+005 0 
+8.62e+007 1.e+006 0 
+
+TABLE 50
+Structural Steel > Strain-Life Parameters
+
+
+Strength Coefficient Pa Strength Exponent  Ductility Coefficient  Ductility Exponent  Cyclic Strength Coefficient Pa Cyclic Strain Hardening Exponent  
+9.2e+008 -0.106 0.213 -0.47 1.e+009 0.2 
+
+TABLE 51
+Structural Steel > Isotropic Elasticity
+
+
+Young's Modulus Pa Poisson's Ratio  Bulk Modulus Pa Shear Modulus Pa Temperature C 
+2.e+011 0.3 1.6667e+011 7.6923e+010  
+
+TABLE 52
+Structural Steel > Isotropic Relative Permeability
+
+
+Relative Permeability  
+10000 

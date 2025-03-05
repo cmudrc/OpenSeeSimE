@@ -1,0 +1,219 @@
+
+
+
+Image file not found
+
+Ansys Fluent Simulation Report
+
+
+Analyst	''''
+Date	2/25/2025 05:06 PM
+
+Table of Contents
+1 System Information
+2 Geometry and Mesh
+2.1 Mesh Size
+2.2 Mesh Quality
+2.3 Orthogonal Quality
+3 Simulation Setup
+3.1 Physics
+3.1.1 Models
+3.1.2 Material Properties
+3.1.3 Cell Zone Conditions
+3.1.4 Boundary Conditions
+3.1.5 Reference Values
+3.2 Solver Settings
+4 Run Information
+5 Solution Status
+6 Report Definitions
+7 Plots
+8 Contours
+9 Vectors
+10 Pathlines
+
+System Information
+
+Application	Fluent
+Settings	2d, double precision, pressure-based, laminar
+Version	25.1.0-10210
+Source Revision	3b709034ad
+Build Time	Nov 26 2024 13:21:42 EST
+CPU	13th Gen Intel(R) Core(TM) i7-13700H
+OS	Windows
+
+Geometry and Mesh
+
+Mesh Size
+
+Cells	Faces	Nodes
+12990	26180	13191
+
+Mesh Quality
+
+Name	Type	Min Orthogonal Quality	Max Aspect Ratio
+geom_surface	Quad Cell	0.70718283	14.20604
+
+Orthogonal Quality
+Image file not found
+
+Simulation Setup
+
+Physics
+
+Models
+
+Model	Settings
+Space	2D
+Time	Steady
+Viscous	Laminar
+Heat Transfer	Enabled
+
+Material Properties
+Fluid	
+air	
+Density	boussinesq
+Cp (Specific Heat)	1006.43 J/(kg K)
+Thermal Conductivity	0.0242 W/(m K)
+Viscosity	1.7894e-05 kg/(m s)
+Thermal Expansion Coefficient	0.00344827 K^-1
+Solid	
+aluminum	
+Density	2719 kg/m^3
+Cp (Specific Heat)	871 J/(kg K)
+Thermal Conductivity	202.4 W/(m K)
+
+Cell Zone Conditions
+Fluid	
+geom_surface	
+Material Name	air
+Specify source terms?	no
+Specify fixed values?	no
+Frame Motion?	no
+Porous zone?	no
+
+Boundary Conditions
+Wall	
+hotwall	
+Wall Thickness [m]	0
+Heat Generation Rate [W/m^3]	0
+Material Name	aluminum
+Thermal BC Type	Temperature
+Temperature [K]	305
+Wall Motion	Stationary Wall
+Shear Boundary Condition	No Slip
+Convective Augmentation Factor	1
+coldwall	
+Wall Thickness [m]	0
+Heat Generation Rate [W/m^3]	0
+Material Name	aluminum
+Thermal BC Type	Temperature
+Temperature [K]	290
+Wall Motion	Stationary Wall
+Shear Boundary Condition	No Slip
+Convective Augmentation Factor	1
+topwall	
+Wall Thickness [m]	0
+Heat Generation Rate [W/m^3]	0
+Material Name	aluminum
+Thermal BC Type	Heat Flux
+Heat Flux [W/m^2]	0
+Wall Motion	Stationary Wall
+Shear Boundary Condition	No Slip
+Convective Augmentation Factor	1
+bottomwall	
+Wall Thickness [m]	0
+Heat Generation Rate [W/m^3]	0
+Material Name	aluminum
+Thermal BC Type	Heat Flux
+Heat Flux [W/m^2]	0
+Wall Motion	Stationary Wall
+Shear Boundary Condition	No Slip
+Convective Augmentation Factor	1
+
+Reference Values
+
+Area	1 m^2
+Density	1.225 kg/m^3
+Depth	1 m
+Enthalpy	0 J/kg
+Length	1 m
+Pressure	0 Pa
+Temperature	288.16 K
+Velocity	1 m/s
+Viscosity	1.7894e-05 kg/(m s)
+Ratio of Specific Heats	1.4
+Yplus for Heat Tran. Coef.	300
+Reference Zone	geom_surface
+
+Solver Settings
+Equations	
+Flow	True
+Energy	True
+Numerics	
+Absolute Velocity Formulation	True
+Pseudo Time Explicit Relaxation Factors	
+Density	1
+Body Forces	1
+Energy	0.75
+Explicit Momentum	0.5
+Explicit Pressure	0.5
+Pressure-Velocity Coupling	
+Type	Coupled
+Pseudo Time Method (Global Time Step)	True
+Discretization Scheme	
+Pressure	PRESTO!
+Momentum	Second Order Upwind
+Energy	Second Order Upwind
+Solution Limits	
+Minimum Absolute Pressure [Pa]	1
+Maximum Absolute Pressure [Pa]	5e+10
+Minimum Static Temperature [K]	1
+Maximum Static Temperature [K]	5000
+
+Run Information
+
+Number of Machines	1
+Number of Cores	1
+Case Read	12.936 seconds
+Data Read	0.136 seconds
+Virtual Current Memory	0.741066 GB
+Virtual Peak Memory	0.74659 GB
+Memory Per M Cell	9.06659
+
+Solution Status
+
+
+Iterations: 607
+
+Value	Absolute Criteria	Convergence Status
+continuity	3.173063e-11	1e-11	Not Converged
+x-velocity	2.339874e-13	0.001	Converged
+y-velocity	1.764232e-12	0.001	Converged
+energy	2.088499e-15	1e-06	Converged
+
+Report Definitions
+topwall_temp	302.4001	K
+bottomwall_temp	292.5999	K
+
+Plots
+Residuals
+
+Residuals
+
+Contours
+contour-1
+
+contour-1
+Image file not found
+
+Vectors
+vector-1
+
+vector-1
+Image file not found
+
+Pathlines
+pathlines-1
+
+pathlines-1
+Image file not found

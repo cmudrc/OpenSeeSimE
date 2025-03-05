@@ -1,0 +1,749 @@
+Mechanical_Report_Files/Logo.png 
+
+Project
+First Saved Monday, May 27, 2019 
+Last Saved Wednesday, February 26, 2025 
+Product Version 2025 R1 
+Save Project Before Solution No 
+Save Project After Solution No 
+
+Mechanical_Report_Files/Figure0001.png
+
+Contents
+Units
+Model
+Geometry Imports
+Geometry Import
+Geometry
+Parts
+Materials
+Coordinate Systems
+Connections
+Contacts
+Contact Regions
+Mesh
+Mesh Controls
+Static Structural
+Analysis Settings
+Loads
+Solution
+Solution Information
+Results
+Material Data
+Aluminum Alloy NL
+Units
+TABLE 1
+
+Unit System Metric (m, kg, N, s, V, A) Degrees rad/s Celsius 
+Angle Degrees 
+Rotational Velocity rad/s 
+Temperature Celsius 
+
+Model
+TABLE 2
+Model > Geometry Imports
+
+Object Name Geometry Imports 
+State Solved 
+
+TABLE 3
+Model > Geometry Imports > Geometry Import
+
+Object Name Geometry Import 
+State Solved 
+Definition 
+Source ''''\dp0\Geom\DM\Geom.scdoc 
+Type SpaceClaim 
+Basic Geometry Options 
+Parameters Independent 
+Parameter Key  
+Advanced Geometry Options 
+Compare Parts On Update No 
+Analysis Type 3-D 
+
+Geometry
+TABLE 4
+Model > Geometry
+
+Object Name Geometry 
+State Fully Defined 
+Definition 
+Source ''''\dp0\Geom\DM\Geom.scdoc 
+Type SpaceClaim 
+Length Unit Meters 
+Element Control Program Controlled 
+Display Style Body Color 
+Bounding Box 
+Length X 0.23 m 
+Length Y 7.e-002 m 
+Length Z 9.525e-003 m 
+Properties 
+Volume 9.1686e-005 m³ 
+Mass 0.25397 kg 
+Scale Factor Value 1. 
+2D Tolerance Default (1.e-005) 
+Statistics 
+Bodies 4 
+Active Bodies 4 
+Nodes 12051 
+Elements 2339 
+Mesh Metric None 
+Update Options 
+Assign Default Material No 
+Basic Geometry Options 
+Solid Bodies Yes 
+Surface Bodies Yes 
+Line Bodies Yes 
+Parameters Independent 
+Parameter Key  
+Attributes Yes 
+Attribute Key  
+Named Selections Yes 
+Named Selection Key  
+Material Properties Yes 
+Advanced Geometry Options 
+Use Associativity Yes 
+Coordinate Systems Yes 
+Coordinate System Key  
+Reader Mode Saves Updated File No 
+Use Instances Yes 
+Smart CAD Update Yes 
+Compare Parts On Update No 
+Analysis Type 3-D 
+Mixed Import Resolution None 
+Import Facet Quality Source 
+Clean Bodies On Import No 
+Stitch Surfaces On Import None 
+Decompose Disjoint Geometry Yes 
+Enclosure and Symmetry Processing Yes 
+
+TABLE 5
+Model > Geometry > Parts
+
+Object Name Bike Crank 2 rev 2011 x.375\Bike Crank 2 rev 2011 x.37511 Geom\Surface Geom\Surface Geom\Surface 
+State Meshed 
+Graphics Properties 
+Visible Yes 
+Transparency 1 
+Definition 
+Suppressed No 
+Stiffness Behavior Flexible 
+Coordinate System Default Coordinate System 
+Reference Temperature By Environment 
+Treatment None 
+Dimension   3D 
+Model Type   Shell 
+Stiffness Option   Membrane and Bending 
+Thickness   2.54e-004 m 
+Thickness Mode   Manual 
+Offset Type   Middle 
+Material 
+Assignment Aluminum Alloy NL 
+Nonlinear Effects Yes 
+Thermal Strain Effects Yes 
+Bounding Box 
+Length X 0.23 m 2.6222e-003 m 1.6002e-003 m 2.6222e-003 m 
+Length Y 7.e-002 m 2.6222e-003 m 2.1082e-003 m 2.6222e-003 m 
+Length Z 9.525e-003 m 0. m 
+Properties 
+Volume 9.1683e-005 m³ 8.5688e-010 m³ 
+Mass 0.25396 kg 2.3736e-006 kg 
+Centroid X 9.9194e-002 m 8.7602e-002 m 8.5012e-002 m 8.2421e-002 m 
+Centroid Y -3.9275e-005 m -1.524e-002 m 
+Centroid Z 4.7072e-003 m 9.525e-003 m 
+Moment of Inertia Ip1 6.3031e-005 kg·m² 8.7911e-013 kg·m² 5.0648e-013 kg·m² 
+Moment of Inertia Ip2 1.03e-003 kg·m² 5.0649e-013 kg·m² 5.0648e-013 kg·m² 8.7911e-013 kg·m² 
+Moment of Inertia Ip3 1.0892e-003 kg·m² 1.3856e-012 kg·m² 
+Surface Area(approx.)   3.3735e-006 m² 
+Statistics 
+Nodes 12039 4 
+Elements 2336 1 
+Mesh Metric None 
+CAD Attributes 
+PartTolerance: 0.00000001 
+Color:143.153.175  
+Color:143.175.143   
+
+TABLE 6
+Model > Geometry > Geom > Surface > Command Snippet
+
+Object Name Commands (APDL) 
+State Fully Defined 
+File 
+File Name  
+File Status File not found 
+Definition 
+Suppressed No 
+Target Mechanical APDL 
+Input Arguments 
+ARG1  
+ARG2  
+ARG3  
+ARG4  
+ARG5  
+ARG6  
+ARG7  
+ARG8  
+ARG9  
+
+Model > Geometry > Geom > Surface > Commands (APDL)
+
+!   Commands inserted into this file will be executed just after material definitions in /PREP7.
+!   The material number for this body is equal to the parameter "matid" if it's not a part of a Material Assignment.
+!   The element type numbers for this body can be referenced using the 1-D array parameter "typeids".
+
+!   Active UNIT system in Workbench when this object was created:  U.S. Customary (in, lbm, lbf, s, V, A)
+!   NOTE:  Any data that requires units (such as mass) is assumed to be in the consistent solver unit system.
+!                See Solving Units in the help system for more information.
+
+et,matid,181
+keyopt,matid,1,2
+TABLE 7
+Model > Geometry > Geom > Surface > Command Snippet
+
+Object Name Commands (APDL) 
+State Fully Defined 
+File 
+File Name  
+File Status File not found 
+Definition 
+Suppressed No 
+Target Mechanical APDL 
+Input Arguments 
+ARG1  
+ARG2  
+ARG3  
+ARG4  
+ARG5  
+ARG6  
+ARG7  
+ARG8  
+ARG9  
+
+Model > Geometry > Geom > Surface > Commands (APDL)
+
+!   Commands inserted into this file will be executed just after material definitions in /PREP7.
+!   The material number for this body is equal to the parameter "matid" if it's not a part of a Material Assignment.
+!   The element type numbers for this body can be referenced using the 1-D array parameter "typeids".
+
+!   Active UNIT system in Workbench when this object was created:  U.S. Customary (in, lbm, lbf, s, V, A)
+!   NOTE:  Any data that requires units (such as mass) is assumed to be in the consistent solver unit system.
+!                See Solving Units in the help system for more information.
+
+et,matid,181
+keyopt,matid,1,2
+TABLE 8
+Model > Geometry > Geom > Surface > Command Snippet
+
+Object Name Commands (APDL) 
+State Fully Defined 
+File 
+File Name  
+File Status File not found 
+Definition 
+Suppressed No 
+Target Mechanical APDL 
+Input Arguments 
+ARG1  
+ARG2  
+ARG3  
+ARG4  
+ARG5  
+ARG6  
+ARG7  
+ARG8  
+ARG9  
+
+Model > Geometry > Geom > Surface > Commands (APDL)
+
+!   Commands inserted into this file will be executed just after material definitions in /PREP7.
+!   The material number for this body is equal to the parameter "matid" if it's not a part of a Material Assignment.
+!   The element type numbers for this body can be referenced using the 1-D array parameter "typeids".
+
+!   Active UNIT system in Workbench when this object was created:  U.S. Customary (in, lbm, lbf, s, V, A)
+!   NOTE:  Any data that requires units (such as mass) is assumed to be in the consistent solver unit system.
+!                See Solving Units in the help system for more information.
+
+
+et,matid,181
+keyopt,matid,1,2TABLE 9
+Model > Materials
+
+Object Name Materials 
+State Fully Defined 
+Statistics 
+Materials 2 
+Material Assignments 0 
+
+Coordinate Systems
+TABLE 10
+Model > Coordinate Systems > Coordinate System
+
+Object Name Global Coordinate System 
+State Fully Defined 
+Definition 
+Type Cartesian 
+Coordinate System ID 0.  
+Origin 
+Origin X 0. m 
+Origin Y 0. m 
+Origin Z 0. m 
+Directional Vectors 
+X Axis Data [ 1. 0. 0. ] 
+Y Axis Data [ 0. 1. 0. ] 
+Z Axis Data [ 0. 0. 1. ] 
+Transfer Properties 
+Source  
+Read Only No 
+
+Connections
+TABLE 11
+Model > Connections
+
+Object Name Connections 
+State Fully Defined 
+Auto Detection 
+Generate Automatic Connection On Refresh Yes 
+Transparency 
+Enabled Yes 
+Statistics 
+Contacts 3 
+Active Contacts 3 
+Joints 0 
+Active Joints 0 
+Beams 0 
+Active Beams 0 
+Bearings 0 
+Active Bearings 0 
+Springs 0 
+Active Springs 0 
+Body Interactions 0 
+Active Body Interactions 0 
+
+TABLE 12
+Model > Connections > Contacts
+
+Object Name Contacts 
+State Fully Defined 
+Definition 
+Connection Type Contact 
+Scope 
+Scoping Method Geometry Selection 
+Geometry All Bodies 
+Auto Detection 
+Tolerance Type Slider 
+Tolerance Slider 0. 
+Tolerance Value 6.0151e-004 m 
+Use Range No 
+Face/Face Yes 
+Face-Face Angle Tolerance 75. ° 
+Face Overlap Tolerance Off 
+Cylindrical Faces Include 
+Face/Edge No 
+Edge/Edge No 
+Priority Include All 
+Group By Bodies 
+Search Across Bodies 
+Statistics 
+Connections 3 
+Active Connections 3 
+
+TABLE 13
+Model > Connections > Contacts > Contact Regions
+
+Object Name Contact Region Contact Region 2 Contact Region 3 
+State Fully Defined 
+Scope 
+Scoping Method Geometry Selection 
+Contact 1 Face 
+Target 1 Face 
+Contact Bodies Bike Crank 2 rev 2011 x.375\Bike Crank 2 rev 2011 x.37511 
+Target Bodies Geom\Surface 
+Target Shell Face Program Controlled 
+Shell Thickness Effect No 
+Protected No 
+Definition 
+Type Bonded 
+Scope Mode Automatic 
+Behavior Program Controlled 
+Trim Contact Program Controlled 
+Trim Tolerance 6.0151e-004 m 
+Contact APDL Name  
+Target APDL Name  
+Suppressed No 
+Display 
+Element Normals No 
+Advanced 
+Formulation Program Controlled 
+Small Sliding Program Controlled 
+Detection Method Program Controlled 
+Penetration Tolerance Program Controlled 
+Elastic Slip Tolerance Program Controlled 
+Normal Stiffness Program Controlled 
+Update Stiffness Program Controlled 
+Pinball Region Program Controlled 
+Geometric Modification 
+Contact Geometry Correction None 
+Target Geometry Correction None 
+
+Mesh
+TABLE 14
+Model > Mesh
+
+Object Name Mesh 
+State Solved 
+Display 
+Display Style Use Geometry Setting 
+Defaults 
+Physics Preference Mechanical 
+Element Order Program Controlled 
+Element Size 5.08e-003 m 
+Sizing 
+Use Adaptive Sizing Yes 
+Resolution Default (2) 
+Mesh Defeaturing Yes 
+Defeature Size Default 
+Transition Fast 
+Span Angle Center Coarse 
+Initial Size Seed Assembly 
+Bounding Box Diagonal 0.2406 m 
+Average Surface Area 2.0519e-003 m² 
+Minimum Edge Length 1.6002e-003 m 
+Quality 
+Check Mesh Quality Yes, Errors 
+Error Limits Standard Mechanical 
+Target Element Quality Default (5.e-002) 
+Smoothing Medium 
+Mesh Metric None 
+Inflation 
+Use Automatic Inflation None 
+Inflation Option Smooth Transition 
+Transition Ratio 0.272 
+Maximum Layers 5 
+Growth Rate 1.2 
+Inflation Algorithm Pre 
+Inflation Element Type Wedges 
+View Advanced Options No 
+Advanced 
+Number of CPUs for Parallel Part Meshing Program Controlled 
+Straight Sided Elements No 
+Rigid Body Behavior Dimensionally Reduced 
+Triangle Surface Mesher Program Controlled 
+Topology Checking Yes 
+Pinch Tolerance Please Define 
+Generate Pinch on Refresh No 
+Sheet Loop Removal No 
+Automatic Methods 
+Sheet Body Method Quad Dominant 
+Sweepable Body Method Sweep 
+Statistics 
+Nodes 12051 
+Elements 2339 
+Show Detailed Statistics No 
+
+TABLE 15
+Model > Mesh > Mesh Controls
+
+Object Name MultiZone Edge Sizing 
+State Fully Defined 
+Scope 
+Scoping Method Geometry Selection 
+Geometry 1 Body 12 Edges 
+Definition 
+Suppressed No 
+Method MultiZone   
+Decomposition Type Program Controlled   
+Mapped/Swept Type Hexa   
+Surface Mesh Method Program Controlled   
+Free Mesh Type Not Allowed   
+Element Order Use Global Setting   
+Src/Trg Selection Automatic   
+Src/Trg Scoping Method Program Controlled   
+Source(s) and Target(s) Program Controlled   
+Sweep Size Behavior Sweep Element Size   
+Sweep Element Size 1.905e-003 m   
+Element Option Solid   
+Type   Number of Divisions 
+Number of Divisions   1 
+Advanced 
+Preserve Boundaries Protected   
+Mesh Based Defeaturing Off   
+Minimum Edge Length 9.525e-003 m   
+Write ICEM CFD Files No   
+Use Split Angle No   
+Behavior   Soft 
+Bias Type   No Bias 
+
+Static Structural
+TABLE 16
+Model > Analysis
+
+Object Name Static Structural 
+State Solved 
+Definition 
+Physics Type Structural 
+Analysis Type Static Structural 
+Solver Target Mechanical APDL 
+Options 
+Environment Temperature 22. °C 
+Generate Input Only No 
+
+TABLE 17
+Model > Static Structural > Analysis Settings
+
+Object Name Analysis Settings 
+State Fully Defined 
+Step Controls 
+Number Of Steps 1. 
+Current Step Number 1. 
+Step End Time 1. s 
+Auto Time Stepping Program Controlled 
+Solver Controls 
+Solver Type Program Controlled 
+Weak Springs Off 
+Solver Pivot Checking Program Controlled 
+Large Deflection Off 
+Inertia Relief Off 
+Quasi-Static Solution Off 
+Rotordynamics Controls 
+Coriolis Effect Off 
+Restart Controls 
+Generate Restart Points Program Controlled 
+Retain Files After Full Solve No 
+Combine Restart Files Program Controlled 
+Nonlinear Controls 
+Newton-Raphson Option Program Controlled 
+Force Convergence Program Controlled 
+Moment Convergence Program Controlled 
+Displacement Convergence Program Controlled 
+Rotation Convergence Program Controlled 
+Line Search Program Controlled 
+Stabilization Off 
+Advanced 
+Inverse Option No 
+Contact Split (DMP) Program Controlled 
+Output Controls 
+Output Selection None 
+Stress Yes 
+Back Stress Yes 
+Strain Yes 
+Contact Data Yes 
+Nonlinear Data Yes 
+Nodal Forces No 
+Volume and Energy Yes 
+Euler Angles Yes 
+General Miscellaneous No 
+Contact Miscellaneous No 
+Store Results At All Time Points 
+Result File Compression Program Controlled 
+Analysis Data Management 
+Solver Files Directory ''''\file_Mech_Files\StaticStructural\ 
+Future Analysis None 
+Scratch Solver Files Directory  
+Save MAPDL db No 
+Contact Summary Program Controlled 
+Delete Unneeded Files Yes 
+Nonlinear Solution Yes 
+Solver Units Active System 
+Solver Unit System mks 
+
+TABLE 18
+Model > Static Structural > Loads
+
+Object Name Fixed Support Force 
+State Fully Defined 
+Scope 
+Scoping Method Geometry Selection 
+Geometry 1 Face 
+Definition 
+Type Fixed Support Force 
+Suppressed No 
+Define By   Components 
+Applied By   Surface Effect 
+Coordinate System   Global Coordinate System 
+X Component   0. N (ramped) 
+Y Component   444.82 N (ramped) 
+Z Component   0. N (ramped) 
+
+FIGURE 1
+Model > Static Structural > Force
+
+Mechanical_Report_Files/Figure0002.png
+
+Solution
+TABLE 19
+Model > Static Structural > Solution
+
+Object Name Solution 
+State Solved 
+Adaptive Mesh Refinement 
+Max Refinement Loops 1. 
+Refinement Depth 2. 
+Information 
+Status Done 
+MAPDL Elapsed Time 8. s 
+MAPDL Memory Used 351. MB 
+MAPDL Result File Size 9.75 MB 
+Post Processing 
+Beam Section Results No 
+On Demand Stress/Strain No 
+
+TABLE 20
+Model > Static Structural > Solution > Solution Information
+
+Object Name Solution Information 
+State Solved 
+Solution Information 
+Solution Output Solver Output 
+Newton-Raphson Residuals 0 
+Identify Element Violations 0 
+Update Interval 2.5 s 
+Display Points All 
+FE Connection Visibility 
+Activate Visibility Yes 
+Display All FE Connectors 
+Draw Connections Attached To All Nodes 
+Line Color Connection Type 
+Visible on Results No 
+Line Thickness Single 
+Display Type Lines 
+
+TABLE 21
+Model > Static Structural > Solution > Results
+
+Object Name Total Deformation Normal Stress Elemental Triads Normal Elastic Strain Equivalent Stress 
+State Solved 
+Scope 
+Scoping Method Geometry Selection 
+Geometry All Bodies 1 Body All Bodies 
+Position   Top/Bottom 
+Definition 
+Type Total Deformation Normal Stress Elemental Triads Normal Elastic Strain Equivalent (von-Mises) Stress 
+By Time 
+Display Time Last 
+Separate Data by Entity No   No 
+Calculate Time History Yes 
+Identifier  
+Suppressed No 
+Orientation   X Axis   X Axis   
+Coordinate System   Global Coordinate System   Solution Coordinate System   
+Results 
+Minimum 0. m -1.6405e+007 Pa   5.8305e-005 m/m 7540.8 Pa 
+Maximum 1.5616e-004 m 1.6396e+007 Pa   5.8305e-005 m/m 1.6841e+007 Pa 
+Average 4.4189e-005 m 1.0367e+005 Pa   5.8305e-005 m/m 5.574e+006 Pa 
+Minimum Occurs On Bike Crank 2 rev 2011 x.375\Bike Crank 2 rev 2011 x.37511   Geom\Surface Bike Crank 2 rev 2011 x.375\Bike Crank 2 rev 2011 x.37511 
+Maximum Occurs On Bike Crank 2 rev 2011 x.375\Bike Crank 2 rev 2011 x.37511   Geom\Surface Bike Crank 2 rev 2011 x.375\Bike Crank 2 rev 2011 x.37511 
+Minimum Value Over Time 
+Minimum 0. m -1.6405e+007 Pa   1.1661e-005 m/m 1508.2 Pa 
+Maximum 0. m -3.281e+006 Pa   5.8305e-005 m/m 7540.8 Pa 
+Maximum Value Over Time 
+Minimum 3.1232e-005 m 3.2792e+006 Pa   1.1661e-005 m/m 3.3681e+006 Pa 
+Maximum 1.5616e-004 m 1.6396e+007 Pa   5.8305e-005 m/m 1.6841e+007 Pa 
+Information 
+Time 1. s 
+Load Step 1 
+Substep 4 
+Iteration Number 5 
+Integration Point Results 
+Display Option   Averaged   Averaged 
+Average Across Bodies   No   No 
+
+FIGURE 2
+Model > Static Structural > Solution > Total Deformation
+
+Mechanical_Report_Files/Figure0003.png
+
+TABLE 22
+Model > Static Structural > Solution > Total Deformation
+
+Time [s] Minimum [m] Maximum [m] Average [m] 
+0.2 0. 3.1232e-005 8.8377e-006 
+0.4 6.2463e-005 1.7675e-005 
+0.7 1.0931e-004 3.0932e-005 
+1. 1.5616e-004 4.4189e-005 
+
+FIGURE 3
+Model > Static Structural > Solution > Normal Stress
+
+Mechanical_Report_Files/Figure0004.png
+
+TABLE 23
+Model > Static Structural > Solution > Normal Stress
+
+Time [s] Minimum [Pa] Maximum [Pa] Average [Pa] 
+0.2 -3.281e+006 3.2792e+006 20735 
+0.4 -6.562e+006 6.5584e+006 41469 
+0.7 -1.1484e+007 1.1477e+007 72571 
+1. -1.6405e+007 1.6396e+007 1.0367e+005 
+
+FIGURE 4
+Model > Static Structural > Solution > Elemental Triads
+
+Mechanical_Report_Files/Figure0005.png
+
+TABLE 24
+Model > Static Structural > Solution > Elemental Triads
+
+Time [s] Minimum [XY] [°] Minimum [YZ] [°] Minimum [ZX] [°] Maximum [XY] [°] Maximum [YZ] [°] Maximum [ZX] [°] Average [XY] [°] Average [YZ] [°] Average [ZX] [°] 
+0.2 45. 0. 0. 45. 0. 0. 45. 0. 0. 
+0.4 
+0.7 
+1. 
+
+FIGURE 5
+Model > Static Structural > Solution > Normal Elastic Strain
+
+Mechanical_Report_Files/Figure0006.png
+
+TABLE 25
+Model > Static Structural > Solution > Normal Elastic Strain
+
+Time [s] Minimum [m/m] Maximum [m/m] Average [m/m] 
+0.2 1.1661e-005 1.1661e-005 1.1661e-005 
+0.4 2.3322e-005 2.3322e-005 2.3322e-005 
+0.7 4.0813e-005 4.0813e-005 4.0813e-005 
+1. 5.8305e-005 5.8305e-005 5.8305e-005 
+
+FIGURE 6
+Model > Static Structural > Solution > Equivalent Stress
+
+Mechanical_Report_Files/Figure0007.png
+
+TABLE 26
+Model > Static Structural > Solution > Equivalent Stress
+
+Time [s] Minimum [Pa] Maximum [Pa] Average [Pa] 
+0.2 1508.2 3.3681e+006 1.1148e+006 
+0.4 3016.3 6.7363e+006 2.2296e+006 
+0.7 5278.6 1.1788e+007 3.9018e+006 
+1. 7540.8 1.6841e+007 5.574e+006 
+
+Material Data 
+Aluminum Alloy NL
+TABLE 27
+Aluminum Alloy NL > Constants
+
+
+Density  2770 kg m^-3 
+Specific Heat Constant Pressure 875 J kg^-1 C^-1 
+
+TABLE 28
+Aluminum Alloy NL > Isotropic Elasticity
+
+
+Young's Modulus Pa Poisson's Ratio  Bulk Modulus Pa Shear Modulus Pa Temperature C 
+7.1e+010 0.33 6.9608e+010 2.6692e+010  
+
+TABLE 29
+Aluminum Alloy NL > Bilinear Isotropic Hardening
+
+
+Yield Strength Pa Tangent Modulus Pa Temperature C 
+2.8e+008 5.e+008  
+
+TABLE 30
+Aluminum Alloy NL > Color
+
+
+Red  Green  Blue  
+155 244 255 

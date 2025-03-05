@@ -1,0 +1,244 @@
+
+
+
+Image file not found
+
+Ansys Fluent Simulation Report
+
+
+Analyst	''''
+Date	2/25/2025 05:14 PM
+
+Table of Contents
+1 System Information
+2 Geometry and Mesh
+2.1 Mesh Size
+2.2 Mesh Quality
+2.3 Orthogonal Quality
+3 Simulation Setup
+3.1 Physics
+3.1.1 Models
+3.1.2 Material Properties
+3.1.3 Cell Zone Conditions
+3.1.4 Boundary Conditions
+3.1.5 Reference Values
+3.2 Solver Settings
+4 Run Information
+5 Solution Status
+6 Report Definitions
+7 Plots
+8 Contours
+9 Vectors
+10 Pathlines
+
+System Information
+
+Application	Fluent
+Settings	3d, double precision, pressure-based, SST k-omega
+Version	25.1.0-10210
+Source Revision	3b709034ad
+Build Time	Nov 26 2024 13:29:29 EST
+CPU	13th Gen Intel(R) Core(TM) i7-13700H
+OS	Windows
+
+Geometry and Mesh
+
+Mesh Size
+
+Cells	Faces	Nodes
+206183	1131369	789913
+
+Mesh Quality
+
+Name	Type	Min Orthogonal Quality	Max Aspect Ratio
+fluid-zone	Poly Cell	0.30050106	27.011797
+
+Orthogonal Quality
+Image file not found
+
+Simulation Setup
+
+Physics
+
+Models
+
+Model	Settings
+Space	3D
+Time	Steady
+Viscous	SST k-omega turbulence model
+
+Material Properties
+Fluid	
+air	
+Density	1.225 kg/m^3
+Viscosity	1.7894e-05 kg/(m s)
+Solid	
+aluminum	
+Density	2719 kg/m^3
+
+Cell Zone Conditions
+Fluid	
+fluid-zone	
+Material Name	air
+Specify source terms?	no
+Specify fixed values?	no
+Frame Motion?	no
+Laminar zone?	no
+Porous zone?	no
+3D Fan Zone?	no
+
+Boundary Conditions
+Inlet	
+inlet	
+Velocity Specification Method	Magnitude, Normal to Boundary
+Reference Frame	Absolute
+Velocity Magnitude [m/s]	50
+Supersonic/Initial Gauge Pressure [Pa]	0
+Turbulence Specification Method	Intensity and Viscosity Ratio
+Turbulent Intensity [%]	1
+Turbulent Viscosity Ratio	2
+Outlet	
+outlet	
+Backflow Reference Frame	Absolute
+Gauge Pressure [Pa]	0
+Pressure Profile Multiplier	1
+Backflow Direction Specification Method	Normal to Boundary
+Turbulence Specification Method	Intensity and Viscosity Ratio
+Backflow Turbulent Intensity [%]	1
+Backflow Turbulent Viscosity Ratio	2
+Backflow Pressure Specification	Total Pressure
+Build artificial walls to prevent reverse flow?	no
+Radial Equilibrium Pressure Distribution	no
+Average Pressure Specification?	no
+Specify targeted mass flow rate	no
+Wall	
+dsl_train	
+Wall Motion	Stationary Wall
+Shear Boundary Condition	No Slip
+Wall Surface Roughness	Standard
+Wall Roughness Height [m]	0
+Wall Roughness Constant	0.5
+ground	
+Wall Motion	Moving Wall
+Shear Boundary Condition	No Slip
+Wall Surface Roughness	Standard
+Define wall motion relative to adjacent cell zone?	yes
+Apply a rotational velocity to this wall?	no
+Velocity Magnitude [m/s]	50
+X-Component of Wall Translation	1
+Y-Component of Wall Translation	0
+Z-Component of Wall Translation	0
+Define wall velocity components?	no
+Wall Roughness Height [m]	0
+Wall Roughness Constant	0.5
+bullet_train	
+Wall Motion	Stationary Wall
+Shear Boundary Condition	No Slip
+Wall Surface Roughness	Standard
+Wall Roughness Height [m]	0
+Wall Roughness Constant	0.5
+wall-tunnel	
+Wall Motion	Stationary Wall
+Shear Boundary Condition	Specified Shear
+Wall Surface Roughness	Standard
+Wall Roughness Height [m]	0
+Wall Roughness Constant	0.5
+X-component of shear stress [Pa]	0
+Y-component of shear stress [Pa]	0
+Z-component of shear stress [Pa]	0
+
+Reference Values
+
+Area	55 m^2
+Density	1.225 kg/m^3
+Enthalpy	0 J/kg
+Length	1 m
+Pressure	0 Pa
+Temperature	288.16 K
+Velocity	50 m/s
+Viscosity	1.7894e-05 kg/(m s)
+Ratio of Specific Heats	1.4
+Yplus for Heat Tran. Coef.	300
+Reference Zone	fluid-zone
+
+Solver Settings
+Equations	
+Flow	True
+Turbulence	True
+Numerics	
+Absolute Velocity Formulation	True
+Pseudo Time Explicit Relaxation Factors	
+Density	1
+Body Forces	1
+Turbulent Kinetic Energy	0.75
+Specific Dissipation Rate	0.75
+Turbulent Viscosity	1
+Explicit Momentum	0.5
+Explicit Pressure	0.5
+Pressure-Velocity Coupling	
+Type	Coupled
+Pseudo Time Method (Global Time Step)	True
+Discretization Scheme	
+Pressure	Second Order
+Momentum	Second Order Upwind
+Turbulent Kinetic Energy	First Order Upwind
+Specific Dissipation Rate	First Order Upwind
+Solution Limits	
+Minimum Absolute Pressure [Pa]	1
+Maximum Absolute Pressure [Pa]	5e+10
+Minimum Static Temperature [K]	1
+Maximum Static Temperature [K]	5000
+Minimum Turb. Kinetic Energy [m^2/s^2]	1e-14
+Minimum Spec. Dissipation Rate [s^-1]	1e-20
+Maximum Turb. Viscosity Ratio	100000
+
+Run Information
+
+Number of Machines	1
+Number of Cores	1
+Case Read	18.223 seconds
+Data Read	2.964 seconds
+Virtual Current Memory	1.45355 GB
+Virtual Peak Memory	1.54123 GB
+Memory Per M Cell	4.00195
+
+Solution Status
+
+
+Iterations: 123
+
+Value	Absolute Criteria	Convergence Status
+continuity	0.0009904464	0.001	Converged
+x-velocity	4.774854e-06	0.001	Converged
+y-velocity	1.549902e-06	0.001	Converged
+z-velocity	1.577308e-06	0.001	Converged
+k	0.0001300797	0.001	Converged
+omega	3.303277e-06	0.001	Converged
+
+Report Definitions
+cd	1.094619	
+bullet_train	0.4443407	
+dsl_train	0.650278	
+
+Plots
+Residuals
+
+Residuals
+
+Contours
+contour-1
+
+contour-1
+Image file not found
+
+Vectors
+vector-1
+
+vector-1
+Image file not found
+
+Pathlines
+pathlines-1
+
+pathlines-1
+Image file not found

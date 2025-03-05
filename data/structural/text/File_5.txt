@@ -1,0 +1,664 @@
+Mechanical_Report_Files/Logo.png 
+
+Project
+First Saved Thursday, February 20, 2025 
+Last Saved Friday, February 21, 2025 
+Product Version 2025 R1 
+Save Project Before Solution No 
+Save Project After Solution No 
+
+Mechanical_Report_Files/Figure0001.png
+
+Contents
+Units
+Model
+Geometry Imports
+Geometry Import
+Geometry
+Parts
+Materials
+Structural Steel Assignment
+Coordinate Systems
+Connections
+Contacts
+Contact Regions
+Mesh
+Named Selections
+Static Structural
+Analysis Settings
+Loads
+Solution
+Solution Information
+Results
+Material Data
+Structural Steel
+Units
+TABLE 1
+
+Unit System Metric (m, kg, N, s, V, A) Degrees rad/s Celsius 
+Angle Degrees 
+Rotational Velocity rad/s 
+Temperature Celsius 
+
+Model
+TABLE 2
+Model > Geometry Imports
+
+Object Name Geometry Imports 
+State Solved 
+
+TABLE 3
+Model > Geometry Imports > Geometry Import
+
+Object Name Geometry Import 
+State Solved 
+Definition 
+Source ''''\examples\Valve.pmdb 
+Type ANSYS PartManager 
+Basic Geometry Options 
+Solid Bodies Yes 
+Surface Bodies Yes 
+Line Bodies No 
+Attributes No 
+Named Selections Yes 
+Named Selection Key NS 
+Material Properties No 
+Advanced Geometry Options 
+Use Associativity Yes 
+Coordinate Systems No 
+Reader Mode Saves Updated File No 
+Use Instances Yes 
+Smart CAD Update Yes 
+Compare Parts On Update No 
+Analysis Type 3-D 
+Mixed Import Resolution None 
+Import Facet Quality Source 
+Clean Bodies On Import No 
+Stitch Surfaces On Import None 
+Decompose Disjoint Geometry Yes 
+Enclosure and Symmetry Processing Yes 
+
+Geometry
+TABLE 4
+Model > Geometry
+
+Object Name Geometry 
+State Fully Defined 
+Definition 
+Source ''''\examples\Valve.pmdb 
+Type ANSYS PartManager 
+Length Unit Meters 
+Element Control Program Controlled 
+Display Style Body Color 
+Bounding Box 
+Length X 0.8255 m 
+Length Y 0.3048 m 
+Length Z 0.32969 m 
+Properties 
+Volume 1.7613e-002 m³ 
+Mass 138.26 kg 
+Scale Factor Value 1. 
+Statistics 
+Bodies 3 
+Active Bodies 3 
+Nodes 27005 
+Elements 14520 
+Mesh Metric None 
+Update Options 
+Assign Default Material No 
+Basic Geometry Options 
+Solid Bodies Yes 
+Surface Bodies Yes 
+Line Bodies No 
+Parameters None 
+Attributes No 
+Named Selections No 
+Material Properties No 
+Advanced Geometry Options 
+Use Associativity Yes 
+Coordinate Systems No 
+Reader Mode Saves Updated File No 
+Use Instances Yes 
+Smart CAD Update Yes 
+Compare Parts On Update No 
+Analysis Type 3-D 
+Mixed Import Resolution None 
+Import Facet Quality Source 
+Clean Bodies On Import No 
+Stitch Surfaces On Import None 
+Decompose Disjoint Geometry Yes 
+Enclosure and Symmetry Processing Yes 
+
+TABLE 5
+Model > Geometry > Parts
+
+Object Name Connector\Solid1 Right_elbow\Solid1 Left_elbow\Solid1 
+State Meshed 
+Graphics Properties 
+Visible Yes 
+Transparency 1 
+Definition 
+Suppressed No 
+Stiffness Behavior Flexible 
+Coordinate System Default Coordinate System 
+Reference Temperature By Environment 
+Treatment None 
+Material 
+Assignment Structural Steel 
+Nonlinear Effects Yes 
+Thermal Strain Effects Yes 
+Bounding Box 
+Length X 0.3175 m 0.254 m 
+Length Y 0.3048 m 0.1905 m 
+Length Z 0.3175 m 0.27305 m 
+Properties 
+Volume 1.2758e-002 m³ 2.4271e-003 m³ 
+Mass 100.15 kg 19.053 kg 
+Centroid X 7.5104e-005 m -0.28473 m 0.28473 m 
+Centroid Y -0.21907 m -0.21908 m 
+Centroid Z -0.41929 m -0.38122 m 
+Moment of Inertia Ip1 1.1357 kg·m² 0.10051 kg·m² 
+Moment of Inertia Ip2 1.11 kg·m² 0.19787 kg·m² 
+Moment of Inertia Ip3 1.0707 kg·m² 0.18912 kg·m² 
+Statistics 
+Nodes 15433 5618 5954 
+Elements 8810 2766 2944 
+Mesh Metric None 
+CAD Attributes 
+PartTolerance: 0.00000001 
+Color:143.143.175  
+Color:175.143.143   
+
+TABLE 6
+Model > Materials
+
+Object Name Materials 
+State Fully Defined 
+Statistics 
+Materials 1 
+Material Assignments 1 
+
+TABLE 7
+Model > Materials > Structural Steel Assignment
+
+Object Name Structural Steel Assignment 
+State Fully Defined 
+General 
+Scoping Method Geometry Selection 
+Geometry 3 Bodies 
+Definition 
+Material Name Structural Steel 
+Nonlinear Effects Yes 
+Thermal Strain Effects Yes 
+Reference Temperature By Environment 
+Suppressed No 
+
+Coordinate Systems
+TABLE 8
+Model > Coordinate Systems > Coordinate System
+
+Object Name Global Coordinate System 
+State Fully Defined 
+Definition 
+Type Cartesian 
+Coordinate System ID 0.  
+Origin 
+Origin X 0. m 
+Origin Y 0. m 
+Origin Z 0. m 
+Directional Vectors 
+X Axis Data [ 1. 0. 0. ] 
+Y Axis Data [ 0. 1. 0. ] 
+Z Axis Data [ 0. 0. 1. ] 
+Transfer Properties 
+Source  
+Read Only No 
+
+Connections
+TABLE 9
+Model > Connections
+
+Object Name Connections 
+State Fully Defined 
+Auto Detection 
+Generate Automatic Connection On Refresh Yes 
+Transparency 
+Enabled Yes 
+Statistics 
+Contacts 2 
+Active Contacts 2 
+Joints 0 
+Active Joints 0 
+Beams 0 
+Active Beams 0 
+Bearings 0 
+Active Bearings 0 
+Springs 0 
+Active Springs 0 
+Body Interactions 0 
+Active Body Interactions 0 
+
+TABLE 10
+Model > Connections > Contacts
+
+Object Name Contacts 
+State Fully Defined 
+Definition 
+Connection Type Contact 
+Scope 
+Scoping Method Geometry Selection 
+Geometry All Bodies 
+Auto Detection 
+Tolerance Type Slider 
+Tolerance Slider 0. 
+Tolerance Value 2.3493e-003 m 
+Use Range No 
+Face/Face Yes 
+Face-Face Angle Tolerance 75. ° 
+Face Overlap Tolerance Off 
+Cylindrical Faces Include 
+Face/Edge No 
+Edge/Edge No 
+Priority Include All 
+Group By Bodies 
+Search Across Bodies 
+Statistics 
+Connections 2 
+Active Connections 2 
+
+TABLE 11
+Model > Connections > Contacts > Contact Regions
+
+Object Name Contact Region Contact Region 2 
+State Fully Defined 
+Scope 
+Scoping Method Geometry Selection 
+Contact 1 Face 
+Target 1 Face 
+Contact Bodies Connector\Solid1 
+Target Bodies Right_elbow\Solid1 Left_elbow\Solid1 
+Protected No 
+Definition 
+Type Bonded 
+Scope Mode Automatic 
+Behavior Program Controlled 
+Trim Contact Program Controlled 
+Trim Tolerance 2.3493e-003 m 
+Contact APDL Name  
+Target APDL Name  
+Suppressed No 
+Display 
+Element Normals No 
+Advanced 
+Formulation Program Controlled 
+Small Sliding Program Controlled 
+Detection Method Program Controlled 
+Penetration Tolerance Program Controlled 
+Elastic Slip Tolerance Program Controlled 
+Normal Stiffness Program Controlled 
+Update Stiffness Program Controlled 
+Pinball Region Program Controlled 
+Geometric Modification 
+Contact Geometry Correction None 
+Target Geometry Correction None 
+
+Mesh
+TABLE 12
+Model > Mesh
+
+Object Name Mesh 
+State Solved 
+Display 
+Display Style Use Geometry Setting 
+Defaults 
+Physics Preference Mechanical 
+Element Order Program Controlled 
+Element Size 2.5e-002 m 
+Sizing 
+Use Adaptive Sizing Yes 
+Resolution Default (2) 
+Mesh Defeaturing Yes 
+Defeature Size Default 
+Transition Fast 
+Span Angle Center Coarse 
+Initial Size Seed Assembly 
+Bounding Box Diagonal 0.93971 m 
+Average Surface Area 1.1067e-002 m² 
+Minimum Edge Length 3.9898e-002 m 
+Quality 
+Check Mesh Quality Yes, Errors 
+Error Limits Aggressive Mechanical 
+Target Element Quality Default (5.e-002) 
+Smoothing Medium 
+Mesh Metric None 
+Inflation 
+Use Automatic Inflation None 
+Inflation Option Smooth Transition 
+Transition Ratio 0.272 
+Maximum Layers 5 
+Growth Rate 1.2 
+Inflation Algorithm Pre 
+Inflation Element Type Wedges 
+View Advanced Options No 
+Advanced 
+Number of CPUs for Parallel Part Meshing Program Controlled 
+Straight Sided Elements No 
+Rigid Body Behavior Dimensionally Reduced 
+Triangle Surface Mesher Program Controlled 
+Topology Checking Yes 
+Pinch Tolerance Please Define 
+Generate Pinch on Refresh No 
+Automatic Methods 
+Sheet Body Method Quad Dominant 
+Sweepable Body Method Sweep 
+Statistics 
+Nodes 27005 
+Elements 14520 
+Show Detailed Statistics No 
+
+Named Selections
+TABLE 13
+Model > Named Selections > Named Selections
+
+Object Name NSFixedSupportFaces NSFrictionlessSupportFaces NSInsideFaces 
+State Fully Defined 
+Scope 
+Scoping Method Geometry Selection 
+Geometry 2 Faces 7 Faces 
+Definition 
+Send to Solver Yes 
+Protected Program Controlled 
+Visible Yes 
+Program Controlled Inflation Exclude 
+Statistics 
+Type Imported 
+Total Selection 2 Faces 7 Faces 
+Surface Area 1.4355e-002 m² 2.1959e-002 m² 0.35015 m² 
+Suppressed 0 
+Used by Mesh Worksheet No 
+
+Static Structural
+TABLE 14
+Model > Analysis
+
+Object Name Static Structural 
+State Solved 
+Definition 
+Physics Type Structural 
+Analysis Type Static Structural 
+Solver Target Mechanical APDL 
+Options 
+Environment Temperature 22. °C 
+Generate Input Only No 
+
+TABLE 15
+Model > Static Structural > Analysis Settings
+
+Object Name Analysis Settings 
+State Fully Defined 
+Step Controls 
+Number Of Steps 1. 
+Current Step Number 1. 
+Step End Time 1. s 
+Auto Time Stepping Program Controlled 
+Solver Controls 
+Solver Type Program Controlled 
+Weak Springs Off 
+Solver Pivot Checking Program Controlled 
+Large Deflection Off 
+Inertia Relief Off 
+Quasi-Static Solution Off 
+Rotordynamics Controls 
+Coriolis Effect Off 
+Restart Controls 
+Generate Restart Points Program Controlled 
+Retain Files After Full Solve No 
+Combine Restart Files Program Controlled 
+Nonlinear Controls 
+Newton-Raphson Option Program Controlled 
+Force Convergence Program Controlled 
+Moment Convergence Program Controlled 
+Displacement Convergence Program Controlled 
+Rotation Convergence Program Controlled 
+Line Search Program Controlled 
+Stabilization Program Controlled 
+Advanced 
+Inverse Option No 
+Contact Split (DMP) Program Controlled 
+Output Controls 
+Output Selection None 
+Stress Yes 
+Back Stress No 
+Strain Yes 
+Contact Data Yes 
+Nonlinear Data No 
+Nodal Forces No 
+Volume and Energy Yes 
+Euler Angles Yes 
+General Miscellaneous No 
+Contact Miscellaneous No 
+Store Results At All Time Points 
+Result File Compression Program Controlled 
+Analysis Data Management 
+Solver Files Directory ''''\StaticStructural\ 
+Future Analysis None 
+Scratch Solver Files Directory  
+Save MAPDL db No 
+Contact Summary Program Controlled 
+Delete Unneeded Files Yes 
+Nonlinear Solution No 
+Solver Units Active System 
+Solver Unit System mks 
+
+TABLE 16
+Model > Static Structural > Loads
+
+Object Name Fixed Support Frictionless Support Pressure 
+State Fully Defined 
+Scope 
+Scoping Method Named Selection 
+Named Selection NSFixedSupportFaces NSFrictionlessSupportFaces NSInsideFaces 
+Definition 
+Type Fixed Support Frictionless Support Pressure 
+Suppressed No 
+Define By   Normal To 
+Applied By   Surface Effect 
+Loaded Area   Deformed 
+Magnitude   Tabular Data 
+Tabular Data 
+Independent Variable   Time 
+
+FIGURE 1
+Model > Static Structural > Pressure
+
+Mechanical_Report_Files/Figure0002.png
+
+TABLE 17
+Model > Static Structural > Pressure
+
+Steps Time [s] Pressure [Pa] 
+1 0. 0. 
+1. 1.5e+011 
+
+Solution
+TABLE 18
+Model > Static Structural > Solution
+
+Object Name Solution 
+State Solved 
+Adaptive Mesh Refinement 
+Max Refinement Loops 1. 
+Refinement Depth 2. 
+Information 
+Status Done 
+MAPDL Elapsed Time 8. s 
+MAPDL Memory Used 558. MB 
+MAPDL Result File Size 9.8125 MB 
+Post Processing 
+Beam Section Results No 
+On Demand Stress/Strain No 
+
+TABLE 19
+Model > Static Structural > Solution > Solution Information
+
+Object Name Solution Information 
+State Solved 
+Solution Information 
+Solution Output Solver Output 
+Newton-Raphson Residuals 0 
+Identify Element Violations 0 
+Update Interval 2.5 s 
+Display Points All 
+FE Connection Visibility 
+Activate Visibility Yes 
+Display All FE Connectors 
+Draw Connections Attached To All Nodes 
+Line Color Connection Type 
+Visible on Results No 
+Line Thickness Single 
+Display Type Lines 
+
+TABLE 20
+Model > Static Structural > Solution > Results
+
+Object Name Total Deformation Equivalent Stress 
+State Solved 
+Scope 
+Scoping Method Geometry Selection 
+Geometry All Bodies 
+Definition 
+Type Total Deformation Equivalent (von-Mises) Stress 
+By Time 
+Display Time Last 
+Separate Data by Entity No 
+Calculate Time History Yes 
+Identifier  
+Suppressed No 
+Results 
+Minimum 0. m 2.8266e+009 Pa 
+Maximum 0.35117 m 1.301e+012 Pa 
+Average 0.11225 m 2.8201e+011 Pa 
+Minimum Occurs On Right_elbow\Solid1 Connector\Solid1 
+Maximum Occurs On Right_elbow\Solid1 
+Information 
+Time 1. s 
+Load Step 1 
+Substep 1 
+Iteration Number 1 
+Integration Point Results 
+Display Option   Averaged 
+Average Across Bodies   No 
+
+FIGURE 2
+Model > Static Structural > Solution > Total Deformation
+
+Mechanical_Report_Files/Figure0003.png
+
+TABLE 21
+Model > Static Structural > Solution > Total Deformation
+
+Time [s] Minimum [m] Maximum [m] Average [m] 
+1. 0. 0.35117 0.11225 
+
+FIGURE 3
+Model > Static Structural > Solution > Equivalent Stress
+
+Mechanical_Report_Files/Figure0004.png
+
+TABLE 22
+Model > Static Structural > Solution > Equivalent Stress
+
+Time [s] Minimum [Pa] Maximum [Pa] Average [Pa] 
+1. 2.8266e+009 1.301e+012 2.8201e+011 
+
+Material Data 
+Structural Steel
+TABLE 23
+Structural Steel > Constants
+
+
+Density  7850 kg m^-3 
+Isotropic Secant Coefficient of Thermal Expansion 1.2e-005 C^-1 
+Specific Heat Constant Pressure 434 J kg^-1 C^-1 
+Isotropic Thermal Conductivity 60.5 W m^-1 C^-1 
+Isotropic Resistivity 1.7e-007 kg m^3 A^-2 s^-3 
+
+TABLE 24
+Structural Steel > Appearance 
+
+
+Red  Green  Blue  
+132 139 179 
+
+TABLE 25
+Structural Steel > Compressive Ultimate Strength 
+
+
+Compressive Ultimate Strength Pa 
+0 
+
+TABLE 26
+Structural Steel > Compressive Yield Strength 
+
+
+Compressive Yield Strength Pa 
+2.5e+008 
+
+TABLE 27
+Structural Steel > Tensile Yield Strength 
+
+
+Tensile Yield Strength Pa 
+2.5e+008 
+
+TABLE 28
+Structural Steel > Tensile Ultimate Strength 
+
+
+Tensile Ultimate Strength Pa 
+4.6e+008 
+
+TABLE 29
+Structural Steel > Isotropic Secant Coefficient of Thermal Expansion
+
+
+Zero-Thermal-Strain Reference Temperature C 
+22 
+
+TABLE 30
+Structural Steel > S-N Curve 
+
+
+Alternating Stress Pa Cycles  Mean Stress Pa 
+3.999e+009 10 0 
+2.827e+009 20 0 
+1.896e+009 50 0 
+1.413e+009 100 0 
+1.069e+009 200 0 
+4.41e+008 2000 0 
+2.62e+008 10000 0 
+2.14e+008 20000 0 
+1.38e+008 1.e+005 0 
+1.14e+008 2.e+005 0 
+8.62e+007 1.e+006 0 
+
+TABLE 31
+Structural Steel > Strain-Life Parameters 
+
+
+Strength Coefficient Pa Strength Exponent  Ductility Coefficient  Ductility Exponent  Cyclic Strength Coefficient Pa Cyclic Strain Hardening Exponent  
+9.2e+008 -0.106 0.213 -0.47 1.e+009 0.2 
+
+TABLE 32
+Structural Steel > Isotropic Elasticity 
+
+
+Young's Modulus Pa Poisson's Ratio  Bulk Modulus Pa Shear Modulus Pa Temperature C 
+2.e+011 0.3 1.6667e+011 7.6923e+010  
+
+TABLE 33
+Structural Steel > Isotropic Relative Permeability 
+
+
+Relative Permeability  
+10000 

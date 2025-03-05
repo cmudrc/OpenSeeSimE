@@ -1,0 +1,1032 @@
+Mechanical_Report_Files/Logo.png 
+
+Project
+First Saved Monday, February 24, 2025 
+Last Saved Monday, February 24, 2025 
+Product Version 2025 R1 
+Save Project Before Solution No 
+Save Project After Solution No 
+
+Mechanical_Report_Files/Figure0001.png
+
+Contents
+Units
+Model
+Geometry Imports
+Geometry Import
+Geometry
+Parts
+Materials
+Coordinate Systems
+Connections
+Connection Group
+Contact Regions
+Mesh
+Mesh Controls
+Named Selections
+Static Structural
+Analysis Settings
+Loads
+Bolt Pretension
+Solution
+Solution Information
+Results
+Contact Tool
+Status
+Probes
+Bolt Tool
+Results
+Material Data
+Steel
+Copper
+Units
+TABLE 1
+
+Unit System Metric (m, kg, N, s, V, A) Degrees rad/s Celsius 
+Angle Degrees 
+Rotational Velocity rad/s 
+Temperature Celsius 
+
+Model
+TABLE 2
+Model > Geometry Imports
+
+Object Name Geometry Imports 
+State Solved 
+
+TABLE 3
+Model > Geometry Imports > Geometry Import
+
+Object Name Geometry Import 
+State Solved 
+Definition 
+Source ''''\examples\example_06_bolt_pret_geom.agdb 
+Type DesignModeler 
+Basic Geometry Options 
+Solid Bodies Yes 
+Surface Bodies Yes 
+Line Bodies No 
+Attributes No 
+Named Selections Yes 
+Named Selection Key NS 
+Material Properties No 
+Advanced Geometry Options 
+Use Associativity Yes 
+Coordinate Systems No 
+Reader Mode Saves Updated File No 
+Use Instances Yes 
+Smart CAD Update Yes 
+Compare Parts On Update No 
+Analysis Type 3-D 
+Mixed Import Resolution None 
+Import Facet Quality Source 
+Clean Bodies On Import No 
+Stitch Surfaces On Import None 
+Decompose Disjoint Geometry Yes 
+Enclosure and Symmetry Processing Yes 
+
+Geometry
+TABLE 4
+Model > Geometry
+
+Object Name Geometry 
+State Fully Defined 
+Definition 
+Source ''''\examples\example_06_bolt_pret_geom.agdb 
+Type DesignModeler 
+Length Unit Meters 
+Element Control Program Controlled 
+Display Style Body Color 
+Bounding Box 
+Length X 0.345 m 
+Length Y 0.2 m 
+Length Z 0.1 m 
+Properties 
+Volume 5.6961e-003 m³ 
+Mass  
+Scale Factor Value 1. 
+Statistics 
+Bodies 6 
+Active Bodies 6 
+Nodes 23978 
+Elements 8644 
+Mesh Metric None 
+Update Options 
+Assign Default Material No 
+Basic Geometry Options 
+Parameters None 
+Attributes No 
+Named Selections Yes 
+Named Selection Key NS 
+Material Properties No 
+Advanced Geometry Options 
+Use Associativity Yes 
+Coordinate Systems No 
+Reader Mode Saves Updated File No 
+Use Instances Yes 
+Smart CAD Update Yes 
+Compare Parts On Update No 
+Analysis Type 3-D 
+Import Facet Quality Source 
+Clean Bodies On Import No 
+Stitch Surfaces On Import None 
+Decompose Disjoint Geometry Yes 
+Enclosure and Symmetry Processing Yes 
+
+TABLE 5
+Model > Geometry > Parts
+
+Object Name Solid Solid Solid Solid Solid Solid 
+State Meshed 
+Graphics Properties 
+Visible Yes 
+Transparency 1 
+Definition 
+Suppressed No 
+Stiffness Behavior Flexible 
+Coordinate System Default Coordinate System 
+Reference Temperature By Environment 
+Treatment None 
+Material 
+Assignment Steel Copper Steel 
+Nonlinear Effects Yes 
+Thermal Strain Effects Yes 
+Bounding Box 
+Length X 0.11 m 0.12 m 4.8e-002 m 5.e-003 m 3.6e-002 m 0.3 m 
+Length Y 0.2 m 6.54e-002 m 5.456e-002 m 3.6e-002 m 
+Length Z 0.1 m 6.54e-002 m 6.3e-002 m 3.6e-002 m 
+Properties 
+Volume 2.1338e-003 m³ 2.2779e-003 m³ 9.1114e-004 m³ 1.1707e-005 m³ 5.6162e-005 m³ 3.0536e-004 m³ 
+Mass  
+Centroid X -5.4306e-002 m -0.17 m -0.254 m -0.2805 m -0.301 m -0.195 m 
+Centroid Y 0.1 m 1.e-001 m 0.1 m 1.e-001 m 
+Centroid Z 5.e-002 m 4.9998e-002 m 5.e-002 m 
+Moment of Inertia Ip1  
+Moment of Inertia Ip2  
+Moment of Inertia Ip3  
+Statistics 
+Nodes 8782 4284 2046 150 444 8272 
+Elements 5675 828 360 15 64 1702 
+Mesh Metric None 
+
+TABLE 6
+Model > Materials
+
+Object Name Materials 
+State Fully Defined 
+Statistics 
+Materials 3 
+Material Assignments 0 
+
+Coordinate Systems
+TABLE 7
+Model > Coordinate Systems > Coordinate System
+
+Object Name Global Coordinate System Coordinate System 
+State Fully Defined 
+Definition 
+Type Cartesian 
+Coordinate System ID 0.    
+Coordinate System   Program Controlled 
+APDL Name   
+Suppressed   No 
+Origin 
+Origin X 0. m -0.195 m 
+Origin Y 0. m 0.1 m 
+Origin Z 0. m 5.e-002 m 
+Define By   Global Coordinates 
+Location   Defined 
+Directional Vectors 
+X Axis Data [ 1. 0. 0. ] [ 0. 0. -1. ] 
+Y Axis Data [ 0. 1. 0. ] 
+Z Axis Data [ 0. 0. 1. ] [ 1. 0. 0. ] 
+Transfer Properties 
+Source  
+Read Only No 
+Principal Axis 
+Axis   Z 
+Define By   Global X Axis 
+Orientation About Principal Axis 
+Axis   Y 
+Define By   Default 
+Transformations 
+Base Configuration   Absolute 
+Transformed Configuration   [ -0.195 0.1 5.e-002 ] 
+
+Connections
+TABLE 8
+Model > Connections
+
+Object Name Connections 
+State Fully Defined 
+Auto Detection 
+Generate Automatic Connection On Refresh Yes 
+Transparency 
+Enabled Yes 
+Statistics 
+Contacts 6 
+Active Contacts 6 
+Joints 0 
+Active Joints 0 
+Beams 0 
+Active Beams 0 
+Bearings 0 
+Active Bearings 0 
+Springs 0 
+Active Springs 0 
+Body Interactions 0 
+Active Body Interactions 0 
+
+TABLE 9
+Model > Connections > Connection Group
+
+Object Name Connection Group 
+State Fully Defined 
+Definition 
+Connection Type Contact 
+Scope 
+Scoping Method Geometry Selection 
+Geometry All Bodies 
+Auto Detection 
+Tolerance Type Slider 
+Tolerance Slider 0. 
+Tolerance Value 1.0278e-003 m 
+Use Range No 
+Face/Face No 
+Face/Edge No 
+Edge/Edge No 
+Priority Include All 
+Group By Bodies 
+Search Across Bodies 
+Statistics 
+Connections 6 
+Active Connections 6 
+
+TABLE 10
+Model > Connections > Connection Group > Contact Regions
+
+Object Name Contact Region Contact Region 2 Contact Region 3 Contact Region 4 Contact Region 5 Contact Region 6 
+State Fully Defined 
+Scope 
+Scoping Method Named Selection 
+Contact block3_block2_cont shank_block3_cont block1_washer_cont washer_bolt_cont shank_bolt_cont block2_block1_cont 
+Target block3_block2_targ shank_block3_targ block1_washer_targ washer_bolt_targ shank_bolt_targ block2_block1_targ 
+Contact Bodies Solid 
+Target Bodies Solid 
+Protected No 
+Definition 
+Type Frictional Bonded Frictional Bonded Frictional 
+Friction Coefficient 0.2   0.2   0.2 
+Scope Mode Manual 
+Behavior Program Controlled 
+Trim Contact Program Controlled 
+Contact APDL Name  
+Target APDL Name  
+Suppressed No 
+Display 
+Element Normals No 
+Advanced 
+Formulation Program Controlled MPC Program Controlled MPC Program Controlled 
+Small Sliding Off Program Controlled Off Program Controlled Off 
+Detection Method Program Controlled 
+Penetration Tolerance Program Controlled   Program Controlled   Program Controlled 
+Elastic Slip Tolerance Program Controlled   Program Controlled   Program Controlled 
+Normal Stiffness Program Controlled   Program Controlled   Program Controlled 
+Update Stiffness Never   Never   Never 
+Stabilization Damping Factor 0.   0.   0. 
+Pinball Region Program Controlled 
+Time Step Controls None   None   None 
+Constraint Type   Program Controlled   Program Controlled   
+Geometric Modification 
+Interface Treatment Add Offset, No Ramping   Add Offset, No Ramping   Add Offset, No Ramping 
+Offset 0. m   0. m   0. m 
+Contact Geometry Correction None 
+Target Geometry Correction None 
+
+TABLE 11
+Model > Connections > Connection Group > Contact Region > Command Snippet
+
+Object Name Commands (APDL) 
+State Fully Defined 
+File 
+File Name  
+File Status File not found 
+Definition 
+Suppressed No 
+Target Mechanical APDL 
+Input Arguments 
+ARG1  
+ARG2  
+ARG3  
+ARG4  
+ARG5  
+ARG6  
+ARG7  
+ARG8  
+ARG9  
+
+Model > Connections > Connection Group > Contact Region > Commands (APDL)
+
+!   Commands inserted into this file will be executed just after the contact region definition.
+!   The type and mat number for the contact type is equal to the parameter "cid".
+!   The type and mat number for the target type is equal to the parameter "tid".
+!   The real number for an asymmetric contact pair is equal to the parameter "cid".
+!   The real numbers for symmetric contact pairs are equal to the parameters "cid" and "tid".
+
+!   Active UNIT system in Workbench when this object was created:  Metric (mm, kg, N, s, mV, mA)
+!   NOTE:  Any data that requires units (such as mass) is assumed to be in the consistent solver unit system.
+!                See Solving Units in the help system for more information.
+
+
+keyopt,cid,9,5
+rmodif,cid,10,0.00
+rmodif,cid,23,0.001TABLE 12
+Model > Connections > Connection Group > Contact Region 3 > Command Snippet
+
+Object Name Commands (APDL) 
+State Fully Defined 
+File 
+File Name  
+File Status File not found 
+Definition 
+Suppressed No 
+Target Mechanical APDL 
+Input Arguments 
+ARG1  
+ARG2  
+ARG3  
+ARG4  
+ARG5  
+ARG6  
+ARG7  
+ARG8  
+ARG9  
+
+Model > Connections > Connection Group > Contact Region 3 > Commands (APDL)
+
+!   Commands inserted into this file will be executed just after the contact region definition.
+!   The type and mat number for the contact type is equal to the parameter "cid".
+!   The type and mat number for the target type is equal to the parameter "tid".
+!   The real number for an asymmetric contact pair is equal to the parameter "cid".
+!   The real numbers for symmetric contact pairs are equal to the parameters "cid" and "tid".
+
+!   Active UNIT system in Workbench when this object was created:  Metric (mm, kg, N, s, mV, mA)
+!   NOTE:  Any data that requires units (such as mass) is assumed to be in the consistent solver unit system.
+!                See Solving Units in the help system for more information.
+
+
+keyopt,cid,9,5
+rmodif,cid,10,0.00
+rmodif,cid,23,0.001TABLE 13
+Model > Connections > Connection Group > Contact Region 6 > Command Snippet
+
+Object Name Commands (APDL) 
+State Fully Defined 
+File 
+File Name  
+File Status File not found 
+Definition 
+Suppressed No 
+Target Mechanical APDL 
+Input Arguments 
+ARG1  
+ARG2  
+ARG3  
+ARG4  
+ARG5  
+ARG6  
+ARG7  
+ARG8  
+ARG9  
+
+Model > Connections > Connection Group > Contact Region 6 > Commands (APDL)
+
+!   Commands inserted into this file will be executed just after the contact region definition.
+!   The type and mat number for the contact type is equal to the parameter "cid".
+!   The type and mat number for the target type is equal to the parameter "tid".
+!   The real number for an asymmetric contact pair is equal to the parameter "cid".
+!   The real numbers for symmetric contact pairs are equal to the parameters "cid" and "tid".
+
+!   Active UNIT system in Workbench when this object was created:  Metric (mm, kg, N, s, mV, mA)
+!   NOTE:  Any data that requires units (such as mass) is assumed to be in the consistent solver unit system.
+!                See Solving Units in the help system for more information.
+
+
+keyopt,cid,9,5
+rmodif,cid,10,0.00
+rmodif,cid,23,0.001Mesh
+TABLE 14
+Model > Mesh
+
+Object Name Mesh 
+State Solved 
+Display 
+Display Style Use Geometry Setting 
+Defaults 
+Physics Preference Mechanical 
+Element Order Program Controlled 
+Element Size Default 
+Sizing 
+Use Adaptive Sizing Yes 
+Resolution Default (2) 
+Mesh Defeaturing Yes 
+Defeature Size Default 
+Transition Fast 
+Span Angle Center Coarse 
+Initial Size Seed Assembly 
+Bounding Box Diagonal 0.41113 m 
+Average Surface Area 9.6116e-003 m² 
+Minimum Edge Length 3.15e-002 m 
+Quality 
+Check Mesh Quality Yes, Errors 
+Error Limits Aggressive Mechanical 
+Target Element Quality Default (5.e-002) 
+Smoothing Medium 
+Mesh Metric None 
+Inflation 
+Use Automatic Inflation None 
+Inflation Option Smooth Transition 
+Transition Ratio 0.272 
+Maximum Layers 5 
+Growth Rate 1.2 
+Inflation Algorithm Pre 
+Inflation Element Type Wedges 
+View Advanced Options No 
+Advanced 
+Number of CPUs for Parallel Part Meshing Program Controlled 
+Straight Sided Elements No 
+Rigid Body Behavior Dimensionally Reduced 
+Triangle Surface Mesher Program Controlled 
+Topology Checking Yes 
+Pinch Tolerance Please Define 
+Generate Pinch on Refresh No 
+Automatic Methods 
+Sheet Body Method Quad Dominant 
+Sweepable Body Method Sweep 
+Statistics 
+Nodes 23978 
+Elements 8644 
+Show Detailed Statistics No 
+
+TABLE 15
+Model > Mesh > Mesh Controls
+
+Object Name Automatic Method Body Sizing Body Sizing 2 Face Meshing Sweep Method 
+State Fully Defined 
+Scope 
+Scoping Method Named Selection 
+Named Selection all_bodies bodies_5 shank shank_face shank 
+Definition 
+Suppressed No 
+Method Automatic   Sweep 
+Element Order Use Global Setting   Use Global Setting 
+Type   Element Size   Number of Divisions 
+Element Size   1.5e-002 m 7.e-003 m   
+Mapped Mesh   No   
+Algorithm   Program Controlled 
+Src/Trg Selection   Manual Source and Target 
+Source Scoping Method   Geometry Selection 
+Source   1 Face 
+Target Scoping Method   Geometry Selection 
+Target   1 Face 
+Free Face Mesh Type   Quad/Tri 
+Sweep Num Divs   Default 
+Element Option   Solid 
+Advanced 
+Defeature Size   Default   
+Behavior   Soft   
+Sweep Bias Type   No Bias 
+
+Named Selections
+TABLE 16
+Model > Named Selections > Named Selections
+
+Object Name block3_block2_cont block3_block2_targ shank_block3_targ shank_block3_cont block1_washer_cont block1_washer_targ washer_bolt_cont washer_bolt_targ shank_bolt_targ shank_bolt_cont block2_block1_cont 
+State Fully Defined 
+Scope 
+Scoping Method Geometry Selection 
+Geometry 1 Face 
+Definition 
+Send to Solver Yes 
+Protected Program Controlled 
+Visible Yes 
+Program Controlled Inflation Exclude 
+Statistics 
+Type Imported 
+Total Selection 1 Face 
+Surface Area 1.8987e-002 m² 3.3886e-002 m² 7.342e-003 m² 1.8987e-002 m² 2.3358e-003 m² 1.5652e-003 m² 3.3886e-002 m² 4.0663e-003 m² 1.8987e-002 m² 
+Suppressed 0 
+Used by Mesh Worksheet No 
+
+TABLE 17
+Model > Named Selections > Named Selections
+
+Object Name block2_block1_targ all_bodies bodies_5 shank shank_face shank_face2 bottom_surface block2_surface shank_surface 
+State Fully Defined 
+Scope 
+Scoping Method Geometry Selection 
+Geometry 1 Face 6 Bodies 5 Bodies 1 Body 1 Face 4 Faces 1 Face 
+Definition 
+Send to Solver Yes 
+Protected Program Controlled 
+Visible Yes 
+Program Controlled Inflation Exclude 
+Statistics 
+Type Imported 
+Total Selection 1 Face 6 Bodies 5 Bodies 1 Body 1 Face 4 Faces 1 Face 
+Surface Area 1.8987e-002 m²   1.0127e-003 m² 2.e-002 m² 7.2e-002 m² 3.3886e-002 m² 
+Suppressed 0 
+Used by Mesh Worksheet No 
+
+Static Structural
+TABLE 18
+Model > Analysis
+
+Object Name Static Structural 
+State Solved 
+Definition 
+Physics Type Structural 
+Analysis Type Static Structural 
+Solver Target Mechanical APDL 
+Options 
+Environment Temperature 22. °C 
+Generate Input Only No 
+
+TABLE 19
+Model > Static Structural > Analysis Settings
+
+Object Name Analysis Settings 
+State Fully Defined 
+Step Controls 
+Number Of Steps 4. 
+Current Step Number 1. 
+Step End Time 1. s 
+Auto Time Stepping Off 
+Define By Substeps 
+Number Of Substeps 2. 
+Solver Controls 
+Solver Type Direct 
+Weak Springs Off 
+Solver Pivot Checking Off 
+Large Deflection Off 
+Inertia Relief Off 
+Quasi-Static Solution Off 
+Rotordynamics Controls 
+Coriolis Effect Off 
+Restart Controls 
+Generate Restart Points Program Controlled 
+Retain Files After Full Solve No 
+Combine Restart Files Program Controlled 
+Nonlinear Controls 
+Newton-Raphson Option Program Controlled 
+Force Convergence Program Controlled 
+Moment Convergence Program Controlled 
+Displacement Convergence Program Controlled 
+Rotation Convergence Program Controlled 
+Line Search Program Controlled 
+Stabilization Program Controlled 
+Advanced 
+Inverse Option No 
+Contact Split (DMP) Program Controlled 
+Output Controls 
+Output Selection None 
+Stress Yes 
+Back Stress No 
+Strain Yes 
+Contact Data Yes 
+Nonlinear Data No 
+Nodal Forces No 
+Volume and Energy Yes 
+Euler Angles Yes 
+General Miscellaneous No 
+Contact Miscellaneous No 
+Store Results At All Time Points 
+Result File Compression Program Controlled 
+Analysis Data Management 
+Solver Files Directory ''''\StaticStructural\ 
+Future Analysis None 
+Scratch Solver Files Directory  
+Save MAPDL db No 
+Contact Summary Program Controlled 
+Delete Unneeded Files Yes 
+Nonlinear Solution Yes 
+Solver Units Active System 
+Solver Unit System mks 
+
+TABLE 20
+Model > Static Structural > Analysis Settings
+Step-Specific "Step Controls"
+
+Step Step End Time Auto Time Stepping Define By Number Of Substeps 
+1 1. s Off Substeps 2. 
+2 2. s Program Controlled   
+3 3. s 
+4 4. s 
+
+TABLE 21
+Model > Static Structural > Loads
+
+Object Name Fixed Support Force 
+State Fully Defined 
+Scope 
+Scoping Method Named Selection 
+Named Selection block2_surface bottom_surface 
+Definition 
+Type Fixed Support Force 
+Suppressed No 
+Define By   Components 
+Applied By   Surface Effect 
+Coordinate System   Global Coordinate System 
+X Component   Tabular Data 
+Y Component   0. N (ramped) 
+Z Component   0. N (ramped) 
+Tabular Data 
+Independent Variable   Time 
+
+FIGURE 1
+Model > Static Structural > Force
+
+Mechanical_Report_Files/Figure0002.png
+
+TABLE 22
+Model > Static Structural > Force
+
+Steps Time [s] X [N] Y [N] Z [N] 
+1 0. 0. = 0. = 0. 
+1. 0. 0. 
+2 2. 5.e+005 = 0. = 0. 
+3 3. 0. 
+4 4. -5.e+005 
+
+TABLE 23
+Model > Static Structural > Bolt Pretension
+
+Object Name Bolt Pretension 
+State Fully Defined 
+Scope 
+Scoping Method Named Selection 
+Named Selection shank_surface 
+Coordinate System Behavior Program Controlled 
+Definition 
+Type Bolt Pretension 
+Suppressed No 
+Formulation Program Controlled 
+Define By Load 
+Preload 6.1363e+005 N 
+Advanced 
+Solve Behavior Combined 
+Tolerance Default (3.0429e-004 m) 
+
+FIGURE 2
+Model > Static Structural > Bolt Pretension
+
+Mechanical_Report_Files/Figure0003.png
+
+TABLE 24
+Model > Static Structural > Bolt Pretension
+
+Steps Define By Preload [N] Preadjustment [m] Increment [m] 
+1. Load 6.1363e+005 N/A N/A 
+2. Lock N/A 
+3. 
+4. 
+
+Solution
+TABLE 25
+Model > Static Structural > Solution
+
+Object Name Solution 
+State Solved 
+Adaptive Mesh Refinement 
+Max Refinement Loops 1. 
+Refinement Depth 2. 
+Information 
+Status Done 
+MAPDL Elapsed Time 3 m 8 s 
+MAPDL Memory Used 759. MB 
+MAPDL Result File Size 26. MB 
+Post Processing 
+Beam Section Results No 
+On Demand Stress/Strain No 
+
+TABLE 26
+Model > Static Structural > Solution > Solution Information
+
+Object Name Solution Information 
+State Solved 
+Solution Information 
+Solution Output Solver Output 
+Newton-Raphson Residuals 0 
+Identify Element Violations 0 
+Update Interval 2.5 s 
+Display Points All 
+FE Connection Visibility 
+Activate Visibility Yes 
+Display All FE Connectors 
+Draw Connections Attached To All Nodes 
+Line Color Connection Type 
+Visible on Results No 
+Line Thickness Single 
+Display Type Lines 
+
+TABLE 27
+Model > Static Structural > Solution > Results
+
+Object Name Total Deformation Equivalent Stress Equivalent Stress 2 
+State Solved 
+Scope 
+Scoping Method Geometry Selection Named Selection 
+Geometry All Bodies   
+Named Selection   shank 
+Definition 
+Type Total Deformation Equivalent (von-Mises) Stress 
+By Time 
+Display Time Last 
+Separate Data by Entity No 
+Calculate Time History Yes 
+Identifier  
+Suppressed No 
+Results 
+Minimum 0. m 3.1837e+005 Pa 8.3627e+005 Pa 
+Maximum 3.7751e-004 m 2.0273e+009 Pa 
+Average 6.6702e-005 m 1.683e+008 Pa 4.0115e+008 Pa 
+Minimum Occurs On Solid 
+Maximum Occurs On Solid 
+Minimum Value Over Time 
+Minimum 0. m 22747 Pa 4.2214e+005 Pa 
+Maximum 0. m 3.1837e+005 Pa 8.5935e+005 Pa 
+Maximum Value Over Time 
+Minimum 1.9111e-004 m 1.0276e+009 Pa 
+Maximum 3.8984e-004 m 2.0892e+009 Pa 
+Information 
+Time 4. s 
+Load Step 4 
+Substep 1 
+Iteration Number 23 
+Integration Point Results 
+Display Option   Averaged 
+Average Across Bodies   No 
+
+FIGURE 3
+Model > Static Structural > Solution > Total Deformation
+
+Mechanical_Report_Files/Figure0004.png
+
+TABLE 28
+Model > Static Structural > Solution > Total Deformation
+
+Time [s] Minimum [m] Maximum [m] Average [m] 
+0.5 0. 1.9111e-004 3.0756e-005 
+1. 3.8197e-004 6.147e-005 
+2. 3.8984e-004 6.216e-005 
+3. 3.8206e-004 6.1961e-005 
+4. 3.7751e-004 6.6702e-005 
+
+FIGURE 4
+Model > Static Structural > Solution > Equivalent Stress
+
+Mechanical_Report_Files/Figure0005.png
+
+TABLE 29
+Model > Static Structural > Solution > Equivalent Stress
+
+Time [s] Minimum [Pa] Maximum [Pa] Average [Pa] 
+0.5 22747 1.0276e+009 8.1813e+007 
+1. 45489 2.0565e+009 1.636e+008 
+2. 92869 2.0892e+009 1.7004e+008 
+3. 61998 2.0497e+009 1.6344e+008 
+4. 3.1837e+005 2.0273e+009 1.683e+008 
+
+FIGURE 5
+Model > Static Structural > Solution > Equivalent Stress 2
+
+Mechanical_Report_Files/Figure0006.png
+
+TABLE 30
+Model > Static Structural > Solution > Equivalent Stress 2
+
+Time [s] Minimum [Pa] Maximum [Pa] Average [Pa] 
+0.5 4.2214e+005 1.0276e+009 2.0441e+008 
+1. 8.4193e+005 2.0565e+009 4.0881e+008 
+2. 8.5935e+005 2.0892e+009 4.1862e+008 
+3. 8.4468e+005 2.0497e+009 4.0766e+008 
+4. 8.3627e+005 2.0273e+009 4.0115e+008 
+
+TABLE 31
+Model > Static Structural > Solution > Contact Tools
+
+Object Name Contact Tool 
+State Solved 
+Scope 
+Scoping Method Worksheet 
+
+Model > Static Structural > Solution > Contact Tool
+
+Name Contact Side 
+Contact Region Both 
+Contact Region 2 Both 
+Contact Region 3 Both 
+Contact Region 4 Both 
+Contact Region 5 Both 
+Contact Region 6 Both 
+
+TABLE 32
+Model > Static Structural > Solution > Contact Tool > Results
+
+Object Name Status 
+State Solved 
+Definition 
+Type Status 
+By Time 
+Display Time Last 
+Calculate Time History Yes 
+Identifier  
+Suppressed No 
+Integration Point Results 
+Display Option Averaged 
+Information 
+Time 4. s 
+Load Step 4 
+Substep 1 
+Iteration Number 23 
+
+FIGURE 6
+Model > Static Structural > Solution > Contact Tool > Status
+
+Mechanical_Report_Files/Figure0007.png
+
+TABLE 33
+Model > Static Structural > Solution > Contact Tool > Status
+
+Time [s] Minimum Maximum Average 
+0.5 0. 3. 1.3964 
+1. 1.3955 
+2. 1.3134 
+3. 1.4822 
+4. 1.47 
+
+TABLE 34
+Model > Static Structural > Solution > Probes
+
+Object Name Force Reaction Moment Reaction 
+State Solved 
+Definition 
+Type Force Reaction Moment Reaction 
+Location Method Boundary Condition 
+Boundary Condition Fixed Support 
+Orientation Global Coordinate System 
+Suppressed No 
+Summation   Centroid 
+Options 
+Result Selection All 
+Display Time End Time 
+Results 
+X Axis 4.9944e+005 N 77.151 N·m 
+Y Axis -161.48 N -1.0708 N·m 
+Z Axis 1.7276 N -7.734 N·m 
+Total 4.9944e+005 N 77.546 N·m 
+Maximum Value Over Time 
+X Axis 4.9944e+005 N 77.151 N·m 
+Y Axis 11.037 N 18.379 N·m 
+Z Axis 93.583 N 2.315 N·m 
+Total 4.9972e+005 N 85.934 N·m 
+Minimum Value Over Time 
+X Axis -4.9972e+005 N -8.8395 N·m 
+Y Axis -835.28 N -1.0708 N·m 
+Z Axis -26.364 N -83.479 N·m 
+Total 238.02 N 2.0113 N·m 
+Information 
+Time 4. s 
+Load Step 4 
+Substep 1 
+Iteration Number 23 
+
+FIGURE 7
+Model > Static Structural > Solution > Force Reaction
+
+Mechanical_Report_Files/Figure0008.png
+
+TABLE 35
+Model > Static Structural > Solution > Force Reaction
+
+Time [s] Force Reaction (X) [N] Force Reaction (Y) [N] Force Reaction (Z) [N] Force Reaction (Total) [N] 
+0.5 -237.62 -11.968 7.164 238.02 
+1. -466.59 11.037 -5.1775 466.75 
+2. -4.9972e+005 -9.531 -26.364 4.9972e+005 
+3. 2109. -835.28 93.583 2270.3 
+4. 4.9944e+005 -161.48 1.7276 4.9944e+005 
+
+FIGURE 8
+Model > Static Structural > Solution > Moment Reaction
+
+Mechanical_Report_Files/Figure0009.png
+
+TABLE 36
+Model > Static Structural > Solution > Moment Reaction
+
+Time [s] Moment Reaction (X) [N·m] Moment Reaction (Y) [N·m] Moment Reaction (Z) [N·m] Moment Reaction (Total) [N·m] 
+0.5 0.17729 0.45261 2.315 2.3655 
+1. 0.50525 -0.67978 1.8242 2.0113 
+2. 1.3228 14.092 -1.4706 14.23 
+3. -8.8395 18.379 -83.479 85.934 
+4. 77.151 -1.0708 -7.734 77.546 
+
+TABLE 37
+Model > Static Structural > Solution > Bolt Tool
+
+Object Name Bolt Tool 
+State Solved 
+Scope 
+Scoping Method Worksheet 
+
+TABLE 38
+Model > Static Structural > Solution > Bolt Tool > Results
+
+Object Name Adjustment Working Load 
+State Solved 
+Definition 
+Type Adjustment Working Load 
+By Time 
+Display Time Last 
+Separate Data by Entity No 
+Calculate Time History Yes 
+Identifier  
+Suppressed No 
+Results 
+Minimum 6.8892e-004 m 6.0572e+005 N 
+Maximum 6.8892e-004 m 6.0572e+005 N 
+Average 6.8892e-004 m   
+Minimum Occurs On Solid 
+Maximum Occurs On Solid 
+Minimum Value Over Time 
+Minimum 3.4459e-004 m 0. N 
+Maximum 6.8892e-004 m 6.2391e+005 N 
+Maximum Value Over Time 
+Minimum 3.4459e-004 m 0. N 
+Maximum 6.8892e-004 m 6.2391e+005 N 
+Information 
+Time 4. s 
+Load Step 4 
+Substep 1 
+Iteration Number 23 
+
+FIGURE 9
+Model > Static Structural > Solution > Bolt Tool > Adjustment
+
+Mechanical_Report_Files/Figure0010.png
+
+TABLE 39
+Model > Static Structural > Solution > Bolt Tool > Adjustment
+
+Time [s] Minimum [m] Maximum [m] Average [m] 
+0.5 3.4459e-004 3.4459e-004 3.4459e-004 
+1. 6.8892e-004 6.8892e-004 6.8892e-004 
+2. 
+3. 
+4. 
+
+FIGURE 10
+Model > Static Structural > Solution > Bolt Tool > Working Load
+
+Mechanical_Report_Files/Figure0011.png
+
+TABLE 40
+Model > Static Structural > Solution > Bolt Tool > Working Load
+
+Time [s] Minimum [N] Maximum [N] 
+0.5 0. 0. 
+1. 
+2. 6.2391e+005 6.2391e+005 
+3. 6.1229e+005 6.1229e+005 
+4. 6.0572e+005 6.0572e+005 
+
+Material Data 
+Steel
+TABLE 41
+Steel > Appearance 
+
+
+Red  Green  Blue  
+181 168 168 
+
+TABLE 42
+Steel > Isotropic Elasticity 
+
+
+Young's Modulus Pa Poisson's Ratio  Bulk Modulus Pa Shear Modulus Pa Temperature C 
+2.1e+011 0.3 1.75e+011 8.0769e+010  
+
+Copper
+TABLE 43
+Copper > Appearance 
+
+
+Red  Green  Blue  
+103 192 205 
+
+TABLE 44
+Copper > Isotropic Elasticity 
+
+
+Young's Modulus Pa Poisson's Ratio  Bulk Modulus Pa Shear Modulus Pa Temperature C 
+1.3e+011 0.3 1.0833e+011 5.e+010  
