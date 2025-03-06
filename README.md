@@ -214,4 +214,4 @@ We thank Ansys for providing the simulation examples used in this benchmark.
 
 ## Contact
 
-For questions or issues, please open an issue in this repository or contact the authors at [jezemba@andrew.cmu.edu].
+For questions or issues, please open an issue in this repository.
