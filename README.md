@@ -1,7 +1,7 @@
 # OpenSeeSimE: Engineering Simulation Benchmark for Vision-Language Models
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Paper](https://img.shields.io/badge/Paper-Arxiv-red)](https://arxiv.org/abs/xxxx.xxxxx)
+
 
 ## Overview
 
