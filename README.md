@@ -8,7 +8,7 @@
 OpenSeeSimE is a multimodal benchmark for evaluating the capabilities of vision-language models (VLMs) in understanding and reasoning about engineering simulation outputs. This benchmark addresses the growing need for evaluating AI models on domain-specific technical tasks beyond general-purpose visual understanding.
 
 <p align="center">
-<img src="paper/figures/Image Modality.png" alt="Sample structural and fluid simulations" width="800"/>
+<img src="paper/SimulationExamples.png" alt="Sample structural and fluid simulations" width="800"/>
 </p>
 
 ## Dataset Description
