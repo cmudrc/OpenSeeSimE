@@ -1,6 +1,7 @@
 # OpenSeeSimE: Engineering Simulation Benchmark for Vision-Language Models
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Paper](https://img.shields.io/badge/Paper-ACM-red.svg)](https://dl.acm.org/doi/pdf/10.1145/3722573.3727826)
 
 
 ## Overview
@@ -202,8 +203,15 @@ If you use this benchmark in your research, please cite our paper:
 }
 ``` -->
 
-Upcoming Citation
-
+```bibtex
+@inproceedings{ezemba2025simulation,
+  title={Simulation vs. Hallucination: Assessing Vision-Language Model Question Answering Capabilities in Engineering Simulations},
+  author={Ezemba, Jessica and McComb, Christopher and Tucker, Conrad},
+  booktitle={Proceedings of the 7th Workshop on Design Automation for CPS and IoT},
+  pages={1--9},
+  year={2025}
+}
+```
 ## License
 
 This repository is released under the MIT License. The benchmark dataset is released for research purposes.
