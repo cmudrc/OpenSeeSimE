@@ -1,4 +1,4 @@
-# OpenSeeSimE: Engineering Simulation Benchmark for Vision-Language Models
+# Simulation vs. Hallucination: Assessing Vision-Language Model Question Answering Capabilities in Engineering Simulations
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Paper](https://img.shields.io/badge/Paper-ACM-red.svg)](https://dl.acm.org/doi/pdf/10.1145/3722573.3727826)
@@ -6,7 +6,7 @@
 
 ## Overview
 
-OpenSeeSimE is a multimodal benchmark for evaluating the capabilities of vision-language models (VLMs) in understanding and reasoning about engineering simulation outputs. This benchmark addresses the growing need for evaluating AI models on domain-specific technical tasks beyond general-purpose visual understanding.
+This is a multimodal benchmark for evaluating the capabilities of vision-language models (VLMs) in understanding and reasoning about engineering simulation outputs. This benchmark addresses the growing need for evaluating AI models on domain-specific technical tasks beyond general-purpose visual understanding.
 
 <p align="center">
 <img src="paper/SimulationExamples.png" alt="Sample structural and fluid simulations" width="800"/>
@@ -14,7 +14,7 @@ OpenSeeSimE is a multimodal benchmark for evaluating the capabilities of vision-
 
 ## Dataset Description
 
-The OpenSeeSimE benchmark comprises multimodal data from 12 distinct simulation examples (6 structural, 6 fluid dynamics) generated using standard engineering simulation software (Ansys). Each simulation is represented in three modalities:
+The benchmark comprises multimodal data from 12 distinct simulation examples (6 structural, 6 fluid dynamics) generated using standard engineering simulation software (Ansys). Each simulation is represented in three modalities:
 
 - **Images**: Static visualizations of simulation results (.png format)
 - **Videos**: Animated visualizations of simulation behavior (.gif for structural, .mp4 for fluid)
